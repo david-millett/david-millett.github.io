@@ -55,7 +55,7 @@ const Projects = () => {
                 {portfolio.map(project => {
                     return (
                         <li key={project.number}>
-                            <p><strong>{project.name}</strong></p>
+                            <h3>{project.name}</h3>
                             <p>{project.description}</p>
                             <p><strong>Tech stack:</strong> {project.techstack}</p>
                         </li>
