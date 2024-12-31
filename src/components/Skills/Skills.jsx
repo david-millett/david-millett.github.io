@@ -1,4 +1,7 @@
 
+//Icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const skillsList = [
     {name: 'HTML', icon: ''},
@@ -14,7 +17,7 @@ const skillsList = [
     {name: 'Django', icon: ''},
     {name: 'PostgreSQL', icon: ''},
     {name: 'npm/pip', icon: ''},
-    {name: 'Git/GitHub', icon: ''},
+    {name: 'Git/GitHub', icon: faGithub},
 ]
 
 const Skills = () => {
@@ -25,7 +28,12 @@ const Skills = () => {
             <ul>
                 {skillsList.map(skill => {
                     return (
-                        <li key={skill.name}>{skill.name}</li>
+                        <>
+                            <li key={skill.name}>
+                                <FontAwesomeIcon icon={skill.icon} />
+                                {skill.name}
+                            </li>
+                        </>
                     )
                 })}
             </ul>

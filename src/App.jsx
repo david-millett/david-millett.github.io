@@ -6,7 +6,6 @@ import NavBar from "./components/NavBar/NavBar";
 // * Pages
 import Landing from "./pages/Landing/Landing";
 
-
 const App = () => {
 
   return (
