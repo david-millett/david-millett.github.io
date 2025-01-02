@@ -10,8 +10,8 @@ const Landing = () => {
     return (
         <main>
             <Banner />
-            <Skills />
             <Projects />
+            <Skills />
             <Experience />
             <AboutMe />
             <ContactMe />

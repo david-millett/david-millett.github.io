@@ -1,6 +1,5 @@
 
 .container {
-    max-width: 800px;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -15,7 +14,7 @@
         margin-bottom: 0.5rem;
         padding: 0.5rem 1rem;
         border-radius: 20px;
-        background-image: linear-gradient(rgb(41, 41, 41), rgb(83, 83, 83));
+        background-image: linear-gradient(rgb(81, 81, 81), rgb(49, 49, 49));
     }
     li:hover {
         color: green;

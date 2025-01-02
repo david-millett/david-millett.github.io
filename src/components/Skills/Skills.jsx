@@ -27,8 +27,10 @@ const skillsList = [
 const Skills = () => {
     return (
         <main className={styles.container}>
-            <h2>Skills</h2>
-            <p>Here are some skills!</p>
+            <div className='headingIntro'>
+                <h2>Skills</h2>
+                <p>Here are some of the key skills I have been using, and continue to learn about:</p>
+            </div>
             <ul>
                 {skillsList.map(skill => {
                     return (

@@ -3,8 +3,10 @@
 const AboutMe = () => {
     return (
         <main>
-            <h2>About Me</h2>
-            <p>Is this needed in addition to the contact?</p>
+            <div className="headingIntro">
+                <h2>About Me</h2>
+                {/* <p>Is this needed in addition to the contact?</p> */}
+            </div>
         </main>
     )
 }

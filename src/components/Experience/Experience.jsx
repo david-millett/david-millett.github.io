@@ -32,8 +32,10 @@ const cv = [
 const Experience = () => {
     return (
         <main>
-            <h2>Experience</h2>
-            <p>Little intro</p>
+            <div className="headingIntro">
+                <h2>Experience</h2>
+                <p>Little intro</p>
+            </div>
             <ul>
                 {cv.map(job => {
                     return (

@@ -49,8 +49,10 @@ const portfolio = [
 const Projects = () => {
     return (
         <main>
-            <h2>Projects</h2>
-            <p>Projects intro</p>
+            <div className="headingIntro">
+                <h2>Projects</h2>
+                <p>Projects intro</p>
+            </div>
             <ul>
                 {portfolio.map(project => {
                     return (

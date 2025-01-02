@@ -3,8 +3,10 @@
 const ContactMe = () => {
     return (
         <main>
-            <h2>Get in touch!</h2>
-            <p>Thank you for checking me out! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. Or, simply fill in the form to reach out!</p>
+            <div className="headingIntro">
+                <h2>Get in touch!</h2>
+                <p>Thank you for checking me out! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. Or, simply fill in the form to reach out!</p>
+            </div>
             <ul>
                 <li>Email</li>
                 <li>LinkedIn</li>
