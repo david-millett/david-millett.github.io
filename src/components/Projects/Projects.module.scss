@@ -1,0 +1,19 @@
+.container {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    li {
+        background-color: grey;
+        border-radius: 10px;
+        width: 48%;
+        padding: 1rem;
+    }
+
+    @media(max-width: 600px) {
+        li {
+            width: 100%;
+        }
+    }
+}
