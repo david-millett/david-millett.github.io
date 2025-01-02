@@ -1,12 +1,16 @@
-
+// Styles
+import styles from './NavBar.module.scss'
 
 const NavBar = () => {
     return (
-        <u>
-            <li>Home</li>
+        <ul className={styles.container}>
+            <li>Top</li>
             <li>Projects</li>
+            <li>Skills</li>
+            <li>Experience</li>
+            <li>About Me</li>
             <li>Contact</li>
-        </u>
+        </ul>
     )
 }
 

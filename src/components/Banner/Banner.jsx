@@ -2,7 +2,10 @@
 
 const Banner = () => {
     return (
-        <h1>Banner</h1>
+        <main>
+            <h1>Hello</h1>
+            <h2>I'm David, nice to meet you</h2>
+        </main>
     )
 }
 
