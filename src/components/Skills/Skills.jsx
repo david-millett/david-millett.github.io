@@ -1,28 +1,32 @@
 
+//Styles
+import styles from './Skills.module.scss'
+
 //Icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FaHtml5, FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub } from 'react-icons/fa'
+import { DiMongodb, DiCss3 } from 'react-icons/di'
+import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
 const skillsList = [
-    {name: 'HTML', icon: ''},
-    {name: 'CSS', icon: ''},
-    {name: 'SASS', icon: ''},
-    {name: 'JavaScript', icon: ''},
-    {name: 'React.js', icon: ''},
-    {name: 'Bootstrap', icon: ''},
-    {name: 'Node.js', icon: ''},
-    {name: 'MongoDB', icon: ''},
-    {name: 'Express.js', icon: ''},
-    {name: 'Python', icon: ''},
-    {name: 'Django', icon: ''},
-    {name: 'PostgreSQL', icon: ''},
-    {name: 'npm/pip', icon: ''},
-    {name: 'Git/GitHub', icon: faGithub},
+    {name: 'HTML', icon: <FaHtml5 />},
+    {name: 'CSS', icon: <DiCss3 />},
+    {name: 'SASS', icon: <FaSass />},
+    {name: 'JavaScript', icon: <FaJs />},
+    {name: 'React.js', icon: <FaReact />},
+    {name: 'Bootstrap', icon: <FaBootstrap />},
+    {name: 'Node.js', icon: <FaNodeJs />},
+    {name: 'MongoDB', icon: <DiMongodb />},
+    {name: 'Express.js', icon: <SiExpress />},
+    {name: 'Python', icon: <FaPython />},
+    {name: 'Django', icon: <SiDjango />},
+    {name: 'PostgreSQL', icon: <SiPostgresql />},
+    {name: 'npm/pip', icon: <FaNpm />},
+    {name: 'Git/GitHub', icon: <FaGithub />},
 ]
 
 const Skills = () => {
     return (
-        <main>
+        <main className={styles.container}>
             <h2>Skills</h2>
             <p>Here are some skills!</p>
             <ul>
@@ -30,7 +34,7 @@ const Skills = () => {
                     return (
                         <>
                             <li key={skill.name}>
-                                <FontAwesomeIcon icon={skill.icon} />
+                                {skill.icon}
                                 {skill.name}
                             </li>
                         </>
