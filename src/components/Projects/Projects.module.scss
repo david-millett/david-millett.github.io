@@ -5,10 +5,13 @@
         gap: 1rem;
     }
     li {
-        background-color: grey;
         border-radius: 10px;
         width: 48%;
         padding: 1rem;
+        transition: 0.5s;
+    }
+    li:hover {
+        background-color: grey;
     }
 
     @media(max-width: 600px) {

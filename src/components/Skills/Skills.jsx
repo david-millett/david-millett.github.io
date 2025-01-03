@@ -12,7 +12,7 @@ const skillsList = [
     {name: 'CSS', icon: <DiCss3 />},
     {name: 'SASS', icon: <FaSass />},
     {name: 'JavaScript', icon: <FaJs />},
-    {name: 'React.js', icon: <FaReact />},
+    {name: 'React.js', icon: <FaReact />, colour: '#0081A3'},
     {name: 'Bootstrap', icon: <FaBootstrap />},
     {name: 'Node.js', icon: <FaNodeJs />},
     {name: 'MongoDB', icon: <DiMongodb />},

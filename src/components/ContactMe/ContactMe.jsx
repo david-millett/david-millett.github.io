@@ -6,6 +6,10 @@ import styles from './ContactMe.module.scss'
 // Icons
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"
 
+// Components
+import EmailButton from '../Buttons/EmailButton'
+import Buttons from '../Buttons/LinkedInGitHubButtons'
+
 const ContactMe = () => {
     return (
         <main className={styles.container}>
@@ -14,9 +18,8 @@ const ContactMe = () => {
                 <p>It was so nice to have you here! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. 🤗</p>
             </div>
             <ul>
-                <li><FaEnvelope />Email</li>
-                <Link to={'https://www.linkedin.com/in/d-millett'} target='_blank'><li><FaLinkedin />LinkedIn</li></Link>
-                <Link to={'http://github.com/david-millett'} target='_blank'><li><FaGithub />GitHub</li></Link>
+                <EmailButton />
+                <Buttons />
             </ul>
             <p>Or, simply fill in the form to reach out!</p>
             <h3>Say hey</h3>

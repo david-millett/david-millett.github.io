@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    gap: 2rem;
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        // background-color: green;
+        padding: 0.5rem 1rem;
+        border: 2px solid white;
+        border-radius: 7px;
+        width: 120px;
+        color: white;
+    }
+    a {
+        text-decoration: none;
+    }
+}

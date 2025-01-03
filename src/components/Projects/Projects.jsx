@@ -68,12 +68,12 @@ const Projects = () => {
                         <li key={project.number}>
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>
-                            <p>{project.timeframe} | {project.team}</p>
+                            {/* <p>{project.timeframe} | {project.team}</p> */}
                             <p><strong>Tech stack:</strong> {project.techstack}</p>
                             <div>
-                                <p>More...</p>
-                                <Link to={project.readme} target='_blank'><FaGithub /> Readme</Link>
-                                <Link to={project.link} target='_blank'><FaGlobe /> Check it out</Link>
+                                {/* <p>More...</p> */}
+                                {/* <Link to={project.readme} target='_blank'><FaGithub /> Readme</Link> */}
+                                {/* <Link to={project.link} target='_blank'><FaGlobe /> Check it out</Link> */}
                             </div>
                         </li>
                     )
