@@ -9,6 +9,8 @@
         width: 48%;
         padding: 1rem;
         transition: 0.5s;
+        display: flex;
+        justify-content: space-between;
     }
     li:hover {
         background-color: grey;

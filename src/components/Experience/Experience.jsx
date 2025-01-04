@@ -1,3 +1,5 @@
+// Styles
+import styles from './Experience.module.scss'
 
 const cv = [
     {
@@ -31,7 +33,7 @@ const cv = [
 
 const Experience = () => {
     return (
-        <main>
+        <main className={styles.container}>
             <div className="headingIntro">
                 <h2>Experience</h2>
                 <p>Little intro</p>
@@ -40,7 +42,12 @@ const Experience = () => {
                 {cv.map(job => {
                     return (
                         <li key={job.role}>
-                            <h3>{job.role}</h3>
+                            <div className={styles.heading}>
+                                <h3>{job.role}</h3>
+                                <p>{job.startDate} - {job.endDate}</p>
+                            </div>
+                            <p>{job.company}</p>
+                            <p>{job.description}</p>
                         </li>
                     )
                 })}

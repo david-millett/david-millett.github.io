@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styles from './Projects.module.scss'
 
 // Icons
-import { FaGithub, FaGlobe, FaPython, FaSass } from 'react-icons/fa'
+import { FaHtml5, FaJs, FaNodeJs, FaPython, FaReact, FaSass } from 'react-icons/fa'
 import { DiMongodb, DiCss3 } from 'react-icons/di'
 import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
@@ -28,7 +28,7 @@ const portfolio = [
         timeframe: '1 week',
         team: 'solo',
         description: 'A volunteering portal for local communities',
-        techstack: 'MongoDB, Express, React, Node.js, SASS',
+        techstack: <><DiMongodb /><SiExpress /><FaReact /><FaNodeJs /><FaSass /></>,
         picture: '',
     },
     {
@@ -39,7 +39,7 @@ const portfolio = [
         timeframe: '1 week',
         team: 'solo',
         description: 'A community for Japanese streetwear enthusiasts',
-        techstack: 'MongoDB, Express, Node.js, CSS',
+        techstack: <><DiMongodb /><SiExpress /><FaNodeJs /><DiCss3 /></>,
         picture: '',
     },
     {
@@ -50,7 +50,7 @@ const portfolio = [
         timeframe: '5 days',
         team: 'solo',
         description: 'A horror-themed minesweeper game with pixel art style',
-        techstack: 'HTML, CSS, JavaScript',
+        techstack: <><FaHtml5 /><DiCss3 /><FaJs /></>,
         picture: '',
     },
 ]
@@ -66,15 +66,11 @@ const Projects = () => {
                 {portfolio.map(project => {
                     return (
                         <li key={project.number}>
-                            <h3>{project.name}</h3>
-                            <p>{project.description}</p>
-                            {/* <p>{project.timeframe} | {project.team}</p> */}
-                            <p><strong>Tech stack:</strong> {project.techstack}</p>
                             <div>
-                                {/* <p>More...</p> */}
-                                {/* <Link to={project.readme} target='_blank'><FaGithub /> Readme</Link> */}
-                                {/* <Link to={project.link} target='_blank'><FaGlobe /> Check it out</Link> */}
+                                <h3>{project.name}</h3>
+                                <p>{project.description}</p>
                             </div>
+                            <p>{project.techstack}</p>
                         </li>
                     )
                 })}
