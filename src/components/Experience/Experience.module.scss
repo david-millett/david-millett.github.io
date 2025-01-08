@@ -1,4 +1,24 @@
+.container {
+    h4 {
+        margin-bottom: 0.5rem;
+    }
+    li {
+        margin-bottom: 1.5rem;
+        display: flex;
+        gap: 1rem;
+    }
+    img {
+        width: 2rem;
+    }
+}
+
 .heading {
     display: flex;
     justify-content: space-between;
+}
+
+.line {
+    background-color: white;
+    width: 0.2rem;
+    height: 100%;
 }
