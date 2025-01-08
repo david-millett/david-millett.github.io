@@ -77,7 +77,7 @@ const Projects = () => {
                         <li key={project.number} className={styles.project}>
                             <div className={styles.projectTitle}>
                                 <h1 style={{color: project.colour}}>{project.name}</h1>
-                                <h2>{project.techstack}</h2>
+                                <h2 style={{color: project.colour}}>{project.techstack}</h2>
                             </div>
                             <h3>{project.subtitle}</h3>
                             <p>{project.team} project - {project.timeframe}</p>

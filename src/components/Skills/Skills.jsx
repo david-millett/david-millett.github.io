@@ -36,8 +36,9 @@ const Skills = () => {
                     return (
                         <>
                             <li key={skill.name}>
-                                {skill.icon}
-                                {skill.name}
+                                <p className={styles.icon}>{skill.icon}</p>
+                                <div></div>
+                                <p className={styles.name}>{skill.name}</p>
                             </li>
                         </>
                     )
