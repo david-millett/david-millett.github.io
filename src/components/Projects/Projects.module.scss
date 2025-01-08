@@ -1,24 +1,40 @@
 .container {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-    li {
-        border-radius: 10px;
-        width: 48%;
-        padding: 1rem;
-        transition: 0.5s;
-        display: flex;
-        justify-content: space-between;
-    }
+    // ul {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     gap: 1rem;
+    // }
     li:hover {
-        background-color: grey;
+        // background-color: grey;
     }
-
+    
     @media(max-width: 600px) {
         li {
             width: 95%;
         }
     }
+}
+
+.project {
+    border-radius: 10px;
+    // width: 48%;
+    padding: 0 0 1.5rem 0;
+    transition: 0.5s;
+}
+
+.projectTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.description {
+    margin: 1rem 0 1rem 0;
+    // color: #a0cdd1;
 }

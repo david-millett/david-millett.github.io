@@ -1,10 +1,5 @@
-import { Link } from 'react-router-dom'
-
 // Styles
 import styles from './ContactMe.module.scss'
-
-// Icons
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"
 
 // Components
 import EmailButton from '../Buttons/EmailButton'

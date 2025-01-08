@@ -3,12 +3,12 @@
 import styles from './Skills.module.scss'
 
 //Icons
-import { FaHtml5, FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub } from 'react-icons/fa'
-import { DiMongodb, DiCss3 } from 'react-icons/di'
+import { FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub } from 'react-icons/fa'
+import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
 import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
 const skillsList = [
-    {name: 'HTML', icon: <FaHtml5 />},
+    {name: 'HTML', icon: <DiHtml5 />},
     {name: 'CSS', icon: <DiCss3 />},
     {name: 'SASS', icon: <FaSass />},
     {name: 'JavaScript', icon: <FaJs />},
