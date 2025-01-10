@@ -3,4 +3,16 @@
     h2 {
         margin: 1em 0 2em 0;
     }
+    
+    span {
+        font-family: 'Kode Mono';
+        color: rgb(146, 219, 78);
+        animation: typing 2s steps(40, end);
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
 }

@@ -68,9 +68,9 @@ const Projects = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h2>Projects</h2>
-                <p>Check out some of my projects, built using a range of technologies across the front and back ends.</p>
+                <h1>Projects</h1>
             </div>
+            {/* <p>Check out some of my projects, built using a range of technologies across the front and back ends.</p> */}
             <ul>
                 {portfolio.map(project => {
                     return (

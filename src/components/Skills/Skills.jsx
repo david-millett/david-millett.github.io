@@ -28,8 +28,8 @@ const Skills = () => {
     return (
         <main className={styles.container}>
             <div className='headingIntro'>
-                <h2>Skills</h2>
-                <p>Here are some of the key skills I have been using, and continue to learn about:</p>
+                <h1>Skills</h1>
+                {/* <p>Here are some of the key skills I have been using, and continue to learn about:</p> */}
             </div>
             <ul>
                 {skillsList.map(skill => {

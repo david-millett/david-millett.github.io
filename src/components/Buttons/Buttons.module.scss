@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     li {
         display: flex;
         justify-content: center;
@@ -10,14 +10,25 @@
         padding: 0.5rem 1rem;
         border: 2px solid white;
         border-radius: 7px;
-        width: 120px;
+        // width: 120px;
         color: white;
+        transition: 0.25s;
     }
     a {
         text-decoration: none;
     }
     li:hover {
-        background-image: linear-gradient(rgb(81, 81, 81), rgb(49, 49, 49));
+        // background-image: linear-gradient(rgb(81, 81, 81), rgb(49, 49, 49));
+        background-color: rgba(255, 255, 255, 0.419);
         cursor: pointer;
+        transform: translateY(-2px);
+    }
+    li:active {
+        background-image: linear-gradient(rgb(49, 49, 49), rgb(81, 81, 81));
+    }
+    @media(max-width: 600px) {
+        // flex-direction: column;
+        // width: 80px;
+        font-size: 0.75rem;
     }
 }

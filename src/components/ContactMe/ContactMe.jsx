@@ -2,23 +2,21 @@
 import styles from './ContactMe.module.scss'
 
 // Components
-import EmailButton from '../Buttons/EmailButton'
-import Buttons from '../Buttons/LinkedInGitHubButtons'
+import Buttons from '../Buttons/ContactButtons'
 
 const ContactMe = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h2>Get in touch!</h2>
-                <p>It was so nice to have you here! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. 🤗</p>
+                <h1>Get in touch!</h1>
             </div>
+            <p>It was so nice to have you here! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. 🤗</p>
             <ul>
-                <EmailButton />
                 <Buttons />
             </ul>
-            <p>Or, simply fill in the form to reach out!</p>
-            <h3>Say hey</h3>
-            <form>
+            {/* <p>Or, simply fill in the form to reach out!</p>
+            <h3>Say hey</h3> */}
+            {/* <form>
                 <div>
                     <label htmlFor="name">Name</label>
                     <input
@@ -61,7 +59,7 @@ const ContactMe = () => {
                     />
                 </div>
                 <button>Send</button>
-            </form>
+            </form> */}
         </main>
     )
 }
