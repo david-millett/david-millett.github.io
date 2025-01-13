@@ -1,9 +1,9 @@
 .container {
-    // ul {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 1rem;
-    // }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
     // li:hover {
         // background-color: grey;
     // }
@@ -18,9 +18,10 @@
 .project {
     border-radius: 10px;
     // width: 48%;
-    padding: 0 0 4rem 0;
+    // padding: 0 0 4rem 0;
     transition: 0.5s;
 }
+
 
 .projectTitle {
     display: flex;

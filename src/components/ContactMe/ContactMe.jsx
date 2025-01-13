@@ -10,7 +10,7 @@ const ContactMe = () => {
             <div className="headingIntro">
                 <h1>Get in touch!</h1>
             </div>
-            <p>It was so nice to have you here! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. 🤗</p>
+            {/* <p>It was so nice to have you here! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. 🤗</p> */}
             <ul>
                 <Buttons />
             </ul>

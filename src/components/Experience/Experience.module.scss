@@ -2,8 +2,13 @@
     h4 {
         margin-bottom: 0.5rem;
     }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
     li {
-        margin-bottom: 3rem;
+        // margin-bottom: 3rem;
         display: flex;
         gap: 1rem;
     }
