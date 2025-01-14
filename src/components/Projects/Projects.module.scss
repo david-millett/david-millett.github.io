@@ -2,7 +2,7 @@
     ul {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 5rem;
     }
     // li:hover {
         // background-color: grey;
@@ -20,6 +20,14 @@
     // width: 48%;
     // padding: 0 0 4rem 0;
     transition: 0.5s;
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 1rem 0 2rem 0;
+    }
+    h3 {
+        // color: white;
+    }
 }
 
 
@@ -27,15 +35,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
     h1 {
         font-size: 2.4rem;
     }
     h2 {
-        font-size: 2rem;
+        // font-size: 2rem;
     }
 }
 
 .description {
     margin: 1rem 0 1rem 0;
     // color: #a0cdd1;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.techstack {
+    display: flex;
+    gap: 0.5rem;
 }

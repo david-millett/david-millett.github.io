@@ -9,6 +9,11 @@ import { FaJs, FaNodeJs, FaPython, FaReact, FaSass } from 'react-icons/fa'
 import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
 import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
+// Images
+import minecreeper from './minecreeper.png'
+import bokunostyle from './bokunostyle.png'
+import plantshelf from './plantshelf.png'
+
 const portfolio = [
     {
         number: 4,
@@ -18,10 +23,10 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Solo',
         subtitle: 'A house plant collecting and care app',
-        techstack: <><FaPython /> <SiDjango /> <SiPostgresql /> <FaSass /></>,
-        picture: '',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        colour: '#d881cc',
+        techstack: <div className={styles.techstack}><FaPython /><SiDjango /><SiPostgresql /><FaSass /></div>,
+        picture: plantshelf,
+        description: "A full-stack app that allows users learn about different house plants and add them to a virtual shelf to track their collection. Designed to look like a bookshelf, this 'plant shelf' is dynamically generated based on how many plants the user owns. The app also tracks when each plant was last watered and, based on the plant's species, informs users when the next watering is due.",
+        colour: '#ed57d1',
     },
     {
         number: 3,
@@ -31,10 +36,10 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Group',
         subtitle: 'A volunteering portal for local communities',
-        techstack: <><DiMongodb /> <SiExpress /> <FaReact /> <FaNodeJs /> <FaSass /></>,
+        techstack: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaReact /><FaNodeJs /><FaSass /></div>,
         picture: '',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        colour: '#f1d388',
+        description: "Created as part of a group of three, Local Heroes is a community volunteering portal that allows users to post odd jobs and everyday tasks they need help with. Users can also create 'helper profiles' to showcase their skills and desire/availability to help.",
+        colour: '#eace51',
     },
     {
         number: 2,
@@ -44,10 +49,10 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Solo',
         subtitle: 'A community for Japanese streetwear enthusiasts',
-        techstack: <><DiMongodb /> <SiExpress /> <FaNodeJs /> <DiCss3 /></>,
-        picture: '',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        colour: '#a0cdd1',
+        techstack: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaNodeJs /><DiCss3 /></div>,
+        picture: bokunostyle,
+        description: "A website designed for people interested in and want to share their interest in Japanese streetwear and fashion. It allows users to browse different brands, keep track of their favourites, and post photos to each brands gallery - where they can share selfies and clothing hauls.",
+        colour: '#86d0d6',
     },
     {
         number: 1,
@@ -57,10 +62,10 @@ const portfolio = [
         timeframe: '5 days',
         team: 'Solo',
         subtitle: 'A horror-themed minesweeper with pixel art style',
-        techstack: <><DiHtml5 /> <DiCss3 /> <FaJs /></>,
-        picture: '',
+        techstack: <div className={styles.techstack}><DiHtml5 /><DiCss3 /><FaJs /></div>,
+        picture: minecreeper,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        colour: '#d76e6e',
+        colour: '#ed5151',
     },
 ]
 
@@ -82,7 +87,8 @@ const Projects = () => {
                             <h3>{project.subtitle}</h3>
                             <p>{project.team} project - {project.timeframe}</p>
                             <p className={styles.description}>{project.description}</p>
-                            <ProjectButtons link={project.link} readme={project.readme} />
+                            <div className={styles.imageContainer}><img src={project.picture} /></div>
+                            <ProjectButtons link={project.link} readme={project.readme} colour={project.colour} />
                         </li>
                     )
                 })}

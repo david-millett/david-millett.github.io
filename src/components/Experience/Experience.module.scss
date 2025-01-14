@@ -1,4 +1,10 @@
+// Colours
+$lime-main: rgb(146, 219, 78);
+
 .container {
+    h3 {
+        color: $lime-main;
+    }
     h4 {
         margin-bottom: 0.5rem;
     }

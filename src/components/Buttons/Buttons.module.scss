@@ -27,7 +27,7 @@ $lime-main: rgb(146, 219, 78);
         border-color: $lime-main;
         cursor: pointer;
         // transform: translateY(-2px);
-        animation: pulsing 0.5s infinite;
+        animation: pulsing 1s infinite;
 
         @keyframes pulsing {
             // 0%, 100% {transform: scale(1);};

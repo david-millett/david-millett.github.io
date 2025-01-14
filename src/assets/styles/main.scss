@@ -1,4 +1,5 @@
-@use './variables';
+// Colours
+$lime-main: rgb(146, 219, 78);
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
@@ -22,6 +23,10 @@ body {
     padding: 0 1.5em;
 }
 
+p {
+    color: rgb(193, 193, 193);
+}
+
 h1 {
     font-size: 2.66em;
 }
@@ -40,6 +45,7 @@ li {
 
     h1 {
         font-family: 'Kode Mono';
+        // color: white;
     }
 
     @media(max-width: 600px) {
