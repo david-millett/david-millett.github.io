@@ -4,13 +4,16 @@ import styles from './ContactMe.module.scss'
 // Components
 import Buttons from '../Buttons/ContactButtons'
 
+// Icons
+import { FaRegAddressCard } from 'react-icons/fa'
+
 const ContactMe = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h1>Get in touch!</h1>
+                <h1><FaRegAddressCard />Get in touch!</h1>
             </div>
-            {/* <p>It was so nice to have you here! Want to get in touch? Feel free to zip over an email or find me on LinkedIn and GitHub. 🤗</p> */}
+            <p className="introLine">It was so nice to have you here! Want to get in touch? Zip over an email or find me on LinkedIn and GitHub!</p>
             <ul>
                 <Buttons />
             </ul>

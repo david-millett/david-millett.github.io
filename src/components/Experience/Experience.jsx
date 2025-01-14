@@ -1,6 +1,9 @@
 // Styles
 import styles from './Experience.module.scss'
 
+// Icons
+import { FaUser } from 'react-icons/fa'
+
 const cv = [
     {
         role: 'Software Engineering Bootcamp',
@@ -40,9 +43,9 @@ const Experience = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h1>Experience</h1>
-                {/* <p>Little intro</p> */}
+                <h1><FaUser /> Experience</h1>
             </div>
+            <p className="introLine">It might be a little roundabout but I've gotten there in the end. In my diverse experience I have honed valuable skills including writing, design, communication, and project managment.</p>
             <ul>
                 {cv.map(job => {
                     return (

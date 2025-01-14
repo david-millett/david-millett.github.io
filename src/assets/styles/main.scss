@@ -38,13 +38,17 @@ li {
 .headingIntro {
     display: flex;
     // flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 5rem 0 2rem 0;
     border-bottom: 3px dashed white;
 
     h1 {
         font-family: 'Kode Mono';
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
         // color: white;
     }
 
@@ -56,4 +60,10 @@ li {
             padding-top: 1.5rem;
         }
     }
+}
+
+.introLine {
+    margin-bottom: 2rem;
+    // text-align: center;
+
 }

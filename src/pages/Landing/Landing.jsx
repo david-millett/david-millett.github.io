@@ -1,5 +1,5 @@
 // * Components
-// import AboutMe from "../../components/AboutMe/AboutMe"
+import AboutMe from "../../components/AboutMe/AboutMe"
 import Banner from "../../components/Banner/Banner"
 import ContactMe from "../../components/ContactMe/ContactMe"
 import Experience from "../../components/Experience/Experience"
@@ -13,7 +13,7 @@ const Landing = () => {
             <Skills />
             <Projects />
             <Experience />
-            {/* <AboutMe /> */}
+            <AboutMe />
             <ContactMe />
         </main>
     )

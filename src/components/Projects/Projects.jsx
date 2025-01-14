@@ -5,7 +5,7 @@ import styles from './Projects.module.scss'
 import ProjectButtons from '../Buttons/ProjectButtons'
 
 // Icons
-import { FaJs, FaNodeJs, FaPython, FaReact, FaSass } from 'react-icons/fa'
+import { FaJs, FaNodeJs, FaPython, FaReact, FaSass, FaFile, FaFileAlt } from 'react-icons/fa'
 import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
 import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
@@ -73,9 +73,9 @@ const Projects = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h1>Projects</h1>
+                <h1><FaFileAlt /> Projects</h1>
             </div>
-            {/* <p>Check out some of my projects, built using a range of technologies across the front and back ends.</p> */}
+            {/* <p className="introLine">Check out some of my projects, built using a range of technologies across the front and back ends.</p> */}
             <ul>
                 {portfolio.map(project => {
                     return (
@@ -88,7 +88,9 @@ const Projects = () => {
                             <p>{project.team} project - {project.timeframe}</p>
                             <p className={styles.description}>{project.description}</p>
                             <div className={styles.imageContainer}><img src={project.picture} /></div>
-                            <ProjectButtons link={project.link} readme={project.readme} colour={project.colour} />
+                            <div className={styles.buttonContainer}>
+                                <ProjectButtons link={project.link} readme={project.readme} colour={project.colour} />
+                            </div>
                         </li>
                     )
                 })}

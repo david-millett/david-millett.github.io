@@ -2,8 +2,10 @@
 $lime-main: rgb(146, 219, 78);
 
 .container {
-    margin: 5rem 0 0 0;
+    margin: 10rem 0 0 0;
     color: white;
+    // border-bottom: 3px dashed white;
+    
     h2 {
         margin: 1em 0 2em 0;
     }
@@ -11,12 +13,9 @@ $lime-main: rgb(146, 219, 78);
     span {
         font-family: 'Kode Mono';
         color: $lime-main;
-        animation: typing 2s infinite;
-    }
-    
-    @keyframes typing {
-        0% { transform: width 0 }
-        100% { width: 100% }
     }
 
+    p {
+        margin-top: 2rem;
+    }
 }

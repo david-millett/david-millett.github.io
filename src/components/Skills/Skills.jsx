@@ -3,7 +3,7 @@
 import styles from './Skills.module.scss'
 
 //Icons
-import { FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub } from 'react-icons/fa'
+import { FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub, FaFireAlt } from 'react-icons/fa'
 import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
 import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
@@ -28,9 +28,9 @@ const Skills = () => {
     return (
         <main className={styles.container}>
             <div className='headingIntro'>
-                <h1>Skills</h1>
-                {/* <p>Here are some of the key skills I have been using, and continue to learn about:</p> */}
+                <h1><FaFireAlt /> Skills</h1>
             </div>
+            {/* <p className="introLine">Here are some of the key skills I have been using, and continue to learn about: I adore to learn and improve, so watch this space!</p> */}
             <ul>
                 {skillsList.map(skill => {
                     return (

@@ -7,10 +7,10 @@ import Buttons from "../Buttons/ContactButtons"
 const Banner = () => {
     return (
         <main className={styles.container}>
-            <h1>Hello, I'm <span>David</span>, a software developer, writer, and dreamer.</h1>
+            <h1>Hey, I'm <span>David</span>, a software developer, writer, and dreamer.</h1>
             <h2>Read on to see some of my work, from full-stack websites, to games, to styling. You can find me at:</h2>
             <Buttons />
-            <p>I am fairly new to being a dev, put my little thing I wrote here, I can't wait to be a dfev woohoo ashdlakjs dgfkj</p>
+            
         </main>
     )
 }
