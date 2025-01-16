@@ -1,4 +1,4 @@
-
+import { animateScroll as scroll, scroller } from 'react-scroll'
 
 // Styles
 import styles from './NavBar.module.scss'
@@ -6,20 +6,25 @@ import styles from './NavBar.module.scss'
 // Icons
 import { FaHome } from 'react-icons/fa'
 
-
 const NavBar = () => {
     
-
-    
+    const scrolly = (destination) => {
+        scroller.scrollTo(destination,  {
+            duration: 1500,
+            // delay: 100,
+            smooth: 'easeInOutCubic',
+            offset: -100,
+        })
+    }
     
     return (
         <ul className={styles.container}>
-            <a href='#top'><li><FaHome /></li></a>
-            <a href={'#skills'}><li>Skills</li></a>
-            <a href={'#projects'}><li>Projects</li></a>
-            <a href={'#experience'}><li>Experience</li></a>
-            <a href={'#aboutme'}><li>About Me</li></a>
-            <a href={'#contact'}><li>Contact</li></a>
+            <a onClick={() => scroll.scrollToTop()}><li><FaHome /></li></a>
+            <a onClick={() => scrolly('skills')}><li>Skills</li></a>
+            <a onClick={() => scrolly('projects')}><li>Projects</li></a>
+            <a onClick={() => scrolly('experience')}><li>Experience</li></a>
+            <a onClick={() => scrolly('aboutme')}><li>About Me</li></a>
+            <a onClick={() => scrolly('contact')}><li>Contact</li></a>
         </ul>
     )
 }

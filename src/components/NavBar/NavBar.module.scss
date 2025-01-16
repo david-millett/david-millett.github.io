@@ -4,7 +4,8 @@
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
-    background-color: #242424;;
+    background-color: #242424;
+    font-family: 'Kode Mono';
     li {
         display: flex;
         align-items: center;
@@ -14,5 +15,8 @@
         align-items: center;
         text-decoration: none;
         color: white;
+    }
+    a:hover {
+        cursor: pointer;
     }
 }
