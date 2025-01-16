@@ -28,7 +28,7 @@ const Skills = () => {
     return (
         <main className={styles.container}>
             <div className='headingIntro'>
-                <h1><FaFireAlt /> Skills</h1>
+                <h1 id='skills'><span className='logo'><FaFireAlt /></span>Skills</h1>
             </div>
             {/* <p className="introLine">Here are some of the key skills I have been using, and continue to learn about: I adore to learn and improve, so watch this space!</p> */}
             <ul>

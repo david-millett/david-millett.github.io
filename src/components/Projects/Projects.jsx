@@ -5,7 +5,7 @@ import styles from './Projects.module.scss'
 import ProjectButtons from '../Buttons/ProjectButtons'
 
 // Icons
-import { FaJs, FaNodeJs, FaPython, FaReact, FaSass, FaFile, FaFileAlt } from 'react-icons/fa'
+import { FaJs, FaNodeJs, FaPython, FaReact, FaSass, FaFileAlt } from 'react-icons/fa'
 import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
 import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 
@@ -13,6 +13,7 @@ import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
 import minecreeper from './minecreeper.png'
 import bokunostyle from './bokunostyle.png'
 import plantshelf from './plantshelf.png'
+import localheroes from './localheroes.png'
 
 const portfolio = [
     {
@@ -37,7 +38,7 @@ const portfolio = [
         team: 'Group',
         subtitle: 'A volunteering portal for local communities',
         techstack: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaReact /><FaNodeJs /><FaSass /></div>,
-        picture: '',
+        picture: localheroes,
         description: "Created as part of a group of three, Local Heroes is a community volunteering portal that allows users to post odd jobs and everyday tasks they need help with. Users can also create 'helper profiles' to showcase their skills and desire/availability to help.",
         colour: '#eace51',
     },
@@ -73,7 +74,7 @@ const Projects = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h1><FaFileAlt /> Projects</h1>
+                <h1 id='projects'><span className='logo'><FaFileAlt /></span>Projects</h1>
             </div>
             {/* <p className="introLine">Check out some of my projects, built using a range of technologies across the front and back ends.</p> */}
             <ul>

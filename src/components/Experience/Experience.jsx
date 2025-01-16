@@ -43,9 +43,9 @@ const Experience = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h1><FaUser /> Experience</h1>
+                <h1 id='experience'><span className='logo'><FaUser /></span>Experience</h1>
             </div>
-            <p className="introLine">It might be a little roundabout but I've gotten there in the end. In my diverse experience I have honed valuable skills including writing, design, communication, and project managment.</p>
+            <p className="introLine">It's true, I took the roundabout path to becoming a software engineer! Along the way, I honed valuable skills including writing, design, communication, and project managment.</p>
             <ul>
                 {cv.map(job => {
                     return (
@@ -58,7 +58,7 @@ const Experience = () => {
                                     <h3>{job.role}</h3>
                                     <p>{job.startDate} - {job.endDate}</p>
                                 </div>
-                                <h4><em>{job.company}</em></h4>
+                                <h4><em>{job.company}; {job.location}</em></h4>
                                 <p>{job.description}</p>
                             </div>
                         </li>

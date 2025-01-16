@@ -8,7 +8,7 @@ import Skills from "../../components/Skills/Skills"
 
 const Landing = () => {
     return (
-        <main>
+        <main className="content">
             <Banner />
             <Skills />
             <Projects />
