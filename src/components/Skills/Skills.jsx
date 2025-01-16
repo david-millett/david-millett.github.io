@@ -32,15 +32,13 @@ const Skills = () => {
             </div>
             {/* <p className="introLine">Here are some of the key skills I have been using, and continue to learn about: I adore to learn and improve, so watch this space!</p> */}
             <ul>
-                {skillsList.map(skill => {
+                {skillsList.map((skill, index) => {
                     return (
-                        <>
-                            <li key={skill.name}>
+                        <li key={index}>
                                 <p className={styles.icon}>{skill.icon}</p>
                                 <div></div>
                                 <p className={styles.name}>{skill.name}</p>
-                            </li>
-                        </>
+                        </li>
                     )
                 })}
             </ul>
