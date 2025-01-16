@@ -1,4 +1,4 @@
-import { animateScroll as scroll, scroller } from 'react-scroll'
+import { animateScroll, scroller } from 'react-scroll'
 
 // Styles
 import styles from './NavBar.module.scss'
@@ -19,7 +19,7 @@ const NavBar = () => {
     
     return (
         <ul className={styles.container}>
-            <a onClick={() => scroll.scrollToTop()}><li><FaHome /></li></a>
+            <a onClick={() => animateScroll.scrollToTop()}><li><FaHome /></li></a>
             <a onClick={() => scrolly('skills')}><li>Skills</li></a>
             <a onClick={() => scrolly('projects')}><li>Projects</li></a>
             <a onClick={() => scrolly('experience')}><li>Experience</li></a>

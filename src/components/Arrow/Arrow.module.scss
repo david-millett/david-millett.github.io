@@ -1,6 +1,12 @@
 .container {
+    display: flex;
+    justify-content: end;
     font-size: 5rem;
-    text-align: right;
     position: sticky;
     bottom: 2rem;
+    //animation bounce
+}
+
+.container:hover {
+    cursor: pointer;
 }

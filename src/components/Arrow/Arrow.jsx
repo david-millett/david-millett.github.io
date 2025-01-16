@@ -1,9 +1,14 @@
+import { animateScroll } from 'react-scroll'
+
 // Styles
 import styles from './Arrow.module.scss'
 
+// Icons
+import { FaChevronUp } from 'react-icons/fa'
+
 const Arrow = () => {
     return (
-        <p className={styles.container}>^</p>
+        <a className={styles.container} onClick={() => {animateScroll.scrollToTop()}}><FaChevronUp /></a>
     )
 }
 
