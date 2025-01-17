@@ -6,6 +6,7 @@ $skillFour: rgb(146, 219, 78);
 .container {
     max-width: 700px;
     margin: 0 auto;
+    padding: 0 1.5em;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -21,6 +22,7 @@ $skillFour: rgb(146, 219, 78);
         // padding: 0 1rem;
         border-radius: 20px;
         background-image: linear-gradient(rgb(81, 81, 81), rgb(49, 49, 49));
+        transition: 0.25s;
         div {
             height: 2rem;
             width: 0.75rem;
@@ -30,7 +32,7 @@ $skillFour: rgb(146, 219, 78);
     li:hover {
         // border-color: $skillFour;
         cursor: default;
-        // transform: translateY(-2px);
+        transform: translateY(-2px);
 
         .icon {
             // color: $skillFour;
