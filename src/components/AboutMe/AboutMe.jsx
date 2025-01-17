@@ -1,9 +1,12 @@
+// Styles
+import styles from './AboutMe.module.scss'
+
 // Icons
 import { FaRegSmile } from 'react-icons/fa'
 
 const AboutMe = () => {
     return (
-        <main>
+        <main className={styles.container}>
             <div className="headingIntro">
                 <h1 id='aboutme'><span className='logo'><FaRegSmile /></span>About Me</h1>
                 {/* <p>Is this needed in addition to the contact?</p> */}

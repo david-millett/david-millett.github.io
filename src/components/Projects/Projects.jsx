@@ -80,7 +80,7 @@ const Projects = () => {
             <ul>
                 {portfolio.map(project => {
                     return (
-                        <li key={project.number} className={styles.project}>
+                        <li key={project.number} className={styles.project} style={{borderColor: project.colour, boxShadow: `0px 0px 10px ${project.colour}`}}>
                             <div className={styles.projectTitle}>
                                 <h1 style={{color: project.colour}}>{project.name}</h1>
                                 <h2 style={{color: project.colour}}>{project.techstack}</h2>

@@ -8,7 +8,7 @@ import { FaChevronUp } from 'react-icons/fa'
 
 const Arrow = () => {
     return (
-        <a className={styles.container} onClick={() => {animateScroll.scrollToTop()}}><FaChevronUp /></a>
+        <div className={styles.container}><a onClick={() => {animateScroll.scrollToTop()}}><FaChevronUp /></a></div>
     )
 }
 
