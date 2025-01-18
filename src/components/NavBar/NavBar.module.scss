@@ -5,14 +5,14 @@ $lime-dark: rgb(107, 160, 56);
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     position: sticky;
     top: 0;
     background-color: #242424;
     font-family: 'Kode Mono';
     max-width: 750px;
     margin: 0 auto;
-    border-bottom: 3px dashed rgb(109, 109, 109);
+    // border-bottom: 3px dashed rgb(109, 109, 109);
     li {
         display: flex;
         align-items: center;
