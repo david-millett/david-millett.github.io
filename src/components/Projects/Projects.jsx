@@ -65,7 +65,7 @@ const portfolio = [
         subtitle: 'A horror-themed minesweeper with pixel art style',
         techstack: <div className={styles.techstack}><DiHtml5 /><DiCss3 /><FaJs /></div>,
         picture: minecreeper,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        description: "Minecreeper is a browser-based minesweeper-style game with a horror twist! While the traditional game tasks players with avoiding mines and setting down flags in their places on the grid-based board, Minecreeper substitues mines for undead skeletons - and the flags for tombstones. The first click is set to always implement a flood fill to improve player experience. Players can also double click to reveal all nearby squares if the correct number of tombstones have been set.",
         colour: '#ed5151',
     },
 ]
