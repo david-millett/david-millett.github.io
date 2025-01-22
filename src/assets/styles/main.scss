@@ -1,6 +1,6 @@
 // Colours
 $lime-main: rgb(146, 219, 78);
-$lime-yellow: rgb(178, 208, 71);
+$lime-yellow: rgb(226, 240, 118);
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
@@ -73,7 +73,7 @@ span {
     font-family: 'Kode Mono';
     color: $lime-main;
     // background: -webkit-gradient($lime-main, $lime-yellow);
-    background: linear-gradient(315deg, $lime-main, $lime-yellow);
+    background: linear-gradient($lime-yellow, $lime-main);
     // -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
