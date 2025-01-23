@@ -3,9 +3,6 @@ import { animateScroll, scroller } from 'react-scroll'
 // Styles
 import styles from './NavBar.module.scss'
 
-// Icons
-import { FaHome } from 'react-icons/fa'
-
 const NavBar = () => {
     
     const scrolly = (destination) => {
@@ -19,7 +16,7 @@ const NavBar = () => {
     
     return (
         <ul className={styles.container} id='desktopNav'>
-            <a onClick={() => animateScroll.scrollToTop()}><li><FaHome /></li></a>
+            <a onClick={() => animateScroll.scrollToTop()}><li>Home</li></a>
             <a onClick={() => scrolly('skills')}><li>Skills</li></a>
             <a onClick={() => scrolly('projects')}><li>Projects</li></a>
             <a onClick={() => scrolly('experience')}><li>Experience</li></a>

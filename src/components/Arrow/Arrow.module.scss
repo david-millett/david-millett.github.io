@@ -1,21 +1,30 @@
 .container {
     display: flex;
     justify-content: end;
-    font-size: 4rem;
+    font-size: 3rem;
     position: sticky;
-    bottom: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2rem 0 0;
-    //animation bounce
+    bottom: 0;
+    // max-width: 1100px;
+    // margin: 0 auto;
+    padding: 0 2rem 2rem 0;
+    animation: bounce 2s infinite;
+    
+    @keyframes bounce {
+        50% {transform: translateY(-4px);}
+    }
+    
     a {
-        background-color: black;
+        background-color: #242424;
         border-radius: 500px;
-        width: 5rem;
-        height: 5rem;
-        padding: 0.25rem 0.5rem;
+        // border: 4px dotted white;
+        width: 4rem;
+        height: 4rem;
+        padding: 0.5rem;
     }
     a:hover {
         cursor: pointer;
+    }
+    @media(min-width: 751px) {
+        display: none;
     }
 }

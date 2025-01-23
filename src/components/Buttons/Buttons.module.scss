@@ -39,7 +39,7 @@ $lime-main: rgb(146, 219, 78);
     li:active {
         background-image: linear-gradient(rgb(49, 49, 49), rgb(81, 81, 81));
     }
-    @media(max-width: 600px) {
+    @media(max-width: 460px) {
         flex-direction: column;
         // align-items: center;
         // width: 80px;

@@ -9,9 +9,9 @@ import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa"
 const Buttons = () => {
     return (
         <main className={styles.container}>
-            <li><FaEnvelope /><span>Email</span></li>
-            <Link to={'https://www.linkedin.com/in/d-millett'} target='_blank'><li><FaLinkedin /><span>LinkedIn</span></li></Link>
-            <Link to={'http://github.com/david-millett'} target='_blank'><li><FaGithub /><span>GitHub</span></li></Link>
+            <li><FaEnvelope />Email</li>
+            <Link to={'https://www.linkedin.com/in/d-millett'} target='_blank'><li><FaLinkedin />LinkedIn</li></Link>
+            <Link to={'http://github.com/david-millett'} target='_blank'><li><FaGithub />GitHub</li></Link>
         </main>
     )
 }

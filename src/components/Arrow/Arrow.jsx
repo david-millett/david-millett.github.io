@@ -4,11 +4,11 @@ import { animateScroll } from 'react-scroll'
 import styles from './Arrow.module.scss'
 
 // Icons
-import { FaChevronUp } from 'react-icons/fa'
+import { FaArrowUp } from 'react-icons/fa'
 
 const Arrow = () => {
     return (
-        <div className={styles.container}><a onClick={() => {animateScroll.scrollToTop()}}><FaChevronUp /></a></div>
+        <div className={styles.container}><a onClick={() => {animateScroll.scrollToTop()}}><FaArrowUp /></a></div>
     )
 }
 

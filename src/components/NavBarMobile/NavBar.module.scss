@@ -16,7 +16,7 @@ $lime-dark: rgb(107, 160, 56);
     // margin: 1rem;
     // display: flex;
     // gap: 1rem;
-    padding: 1.5rem;
+    padding: 3rem;
     // position: sticky;
     // top: 0;
     background-color: #242424;
@@ -24,10 +24,16 @@ $lime-dark: rgb(107, 160, 56);
     // max-width: 750px;
     // margin: 0 auto;
     // border-bottom: 3px dashed rgb(109, 109, 109);
+    height: 100%;
     li {
-        // display: flex;
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
         // align-items: center;
-        margin-top: 0.5rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        // border-bottom: 3px dotted white;
+
     }
     a {
         // display: flex;
@@ -46,4 +52,19 @@ $lime-dark: rgb(107, 160, 56);
         text-shadow: none;
         color: $lime-dark;
     }
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.open {
+    animation: wink 1s infinite;
+    @keyframes wink {
+        50% {display: 0};
+    }
+}
+
+.wink {
+    display: abdolute;
 }
