@@ -5,7 +5,8 @@ $lime-dark: rgb(107, 160, 56);
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 1rem 0;
+    // padding: 1rem 0;
+    height: 4.5rem;
     position: sticky;
     top: 0;
     background-color: #242424;

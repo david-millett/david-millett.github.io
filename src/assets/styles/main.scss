@@ -11,6 +11,18 @@ $lime-yellow: rgb(226, 240, 118);
     box-sizing: border-box;
 }
 
+@media(max-width: 750px) {
+    #desktopNav {
+        display: none;
+    }
+}
+
+@media(min-width: 751px) {
+    #mobileNav {
+        display: none;
+    }
+}
+
 body {
     font-family: Outfit, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, 0.87);
@@ -85,4 +97,36 @@ span {
 
 #projects, #skills, #experience, #aboutme, #contact {
     scroll-margin-top: 100px;
+}
+
+
+.bm-burger-button {
+    position: fixed;
+    width: 1.75rem;
+    height: 1.5rem;
+    right: 2rem;
+    top: 1.5rem;
+}
+
+.bm-burger-bars {
+    background: $lime-main;
+}
+
+.bm-burger-bars-hover {
+    // background: white;
+    box-shadow: 0 0 10px $lime-main;
+}
+
+.bm-cross {
+    background: $lime-main;
+}
+
+.bm-cross-button {
+    // height: 2rem;
+    // width: 2rem;
+}
+
+.bm-menu {
+    // top: 0px;
+    // background: black;
 }

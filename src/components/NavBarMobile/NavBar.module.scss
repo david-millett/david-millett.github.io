@@ -1,0 +1,49 @@
+// Colours
+$lime-main: rgb(146, 219, 78);
+$lime-dark: rgb(107, 160, 56);
+
+.container {
+    background-color: #242424;
+    position: sticky;
+    height: 4.5rem;
+    top: 0;
+}
+
+.list {
+    // background-color: aqua;
+    // display: flex;
+    // justify-content: flex-end;
+    // margin: 1rem;
+    // display: flex;
+    // gap: 1rem;
+    padding: 1.5rem;
+    // position: sticky;
+    // top: 0;
+    background-color: #242424;
+    font-family: 'Kode Mono';
+    // max-width: 750px;
+    // margin: 0 auto;
+    // border-bottom: 3px dashed rgb(109, 109, 109);
+    li {
+        // display: flex;
+        // align-items: center;
+        margin-top: 0.5rem;
+    }
+    a {
+        // display: flex;
+        // align-items: center;
+        // text-decoration: none;
+        color: white;
+        transition: 0.25s;
+    }
+    a:hover {
+        cursor: pointer;
+        color: $lime-main;
+        text-shadow: 0px 0px 10px;
+        // transform: translateY(-2px);
+    }
+    a:active {
+        text-shadow: none;
+        color: $lime-dark;
+    }
+}

@@ -13,12 +13,12 @@ const NavBar = () => {
             duration: 1500,
             // delay: 100,
             smooth: 'easeInOutCubic',
-            offset: -100,
+            offset: -80,
         })
     }
     
     return (
-        <ul className={styles.container}>
+        <ul className={styles.container} id='desktopNav'>
             <a onClick={() => animateScroll.scrollToTop()}><li><FaHome /></li></a>
             <a onClick={() => scrolly('skills')}><li>Skills</li></a>
             <a onClick={() => scrolly('projects')}><li>Projects</li></a>

@@ -2,12 +2,12 @@
 $lime-main: rgb(146, 219, 78);
 
 .container {
-    margin: 10rem auto 7.5rem auto;
+    margin: 0 auto 7.5rem auto;
     color: white;
     // border-bottom: 3px dashed white;
     max-width: 700px;
     // margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 10rem 1.5em 0 1.5rem;
 
     
     h2 {
@@ -16,5 +16,9 @@ $lime-main: rgb(146, 219, 78);
 
     p {
         margin-top: 2rem;
+    }
+
+    ul {
+        display: flex;
     }
 }

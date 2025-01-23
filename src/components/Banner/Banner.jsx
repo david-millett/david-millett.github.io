@@ -10,7 +10,9 @@ const Banner = () => {
             <h1>Hey there, I'm <span>David</span>.</h1>
             <h1>Developer, writer, and creative.</h1>
             <h2>Read on to get a feel for my work, from full-stack websites, to games, to styling. You can find me or get in touch via:</h2>
-            <Buttons />
+            <ul>
+                <Buttons />
+            </ul>
             
         </main>
     )
