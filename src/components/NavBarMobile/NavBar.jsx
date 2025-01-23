@@ -6,8 +6,7 @@ import { animateScroll, scroller } from 'react-scroll'
 import styles from './NavBar.module.scss'
 
 // Icons
-import { FaArrowUp, FaFireAlt, FaFileAlt, FaUser, FaRegSmile, FaRegGrinWink,FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
-
+import { FaArrowUp, FaFireAlt, FaFileAlt, FaUser, FaRegSmile,FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
 
 const NavBarMobile = () => {
     

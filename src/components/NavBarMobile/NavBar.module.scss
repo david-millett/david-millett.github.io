@@ -58,13 +58,3 @@ $lime-dark: rgb(107, 160, 56);
     font-size: 1.5rem;
 }
 
-.open {
-    animation: wink 1s infinite;
-    @keyframes wink {
-        50% {display: 0};
-    }
-}
-
-.wink {
-    display: abdolute;
-}

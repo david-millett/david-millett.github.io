@@ -14,8 +14,11 @@
             display: block;
         }
     }
+    span:hover {
+        cursor: pointer;
+    }
     span:active {
-        animation: boing 0.3s;
+        animation: boing 0.2s;
         @keyframes boing {
             50% {transform: translateY(-50px);}
         }
