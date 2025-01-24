@@ -32,7 +32,11 @@ $skillFour: rgb(146, 219, 78);
     li:hover {
         // border-color: $skillFour;
         cursor: default;
-        transform: translateY(-2px);
+        // transform: translateY(-2px);
+        animation: jiggle 0.2s;
+        @keyframes jiggle {
+            50% {transform: translateY(1px);}
+        }
 
         // .icon {
         //     color: $skillFour;

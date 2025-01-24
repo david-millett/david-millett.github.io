@@ -6,24 +6,67 @@
     span {
         font-size: 2rem;
     }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-start;
+        align-items: center;
+        p {
+            // display: none;
+            font-size: 0.6rem;
+            padding-left: 3px;
+            // opacity: 0;
+        }
+        
+    }
     .wink {
         display: none;
     }
+    .yay {
+        display: none;
+    }
+    
     h1:hover {
         .open {
             display: none;
         }
         .wink {
-            display: block;
+            display: flex;
+            p {
+                // opacity: 1;
+                animation: psst 1s;
+                @keyframes psst {
+                    // 0% {opacity: 0;}
+                    50% {opacity: 1;}
+                    // 100% {opacity: 0;}
+                }
+            }
+        }
+        span {
+            animation: jiggle 0.2s infinite;
+            @keyframes jiggle {
+                50% {transform: translateX(1px);}
+            }
         }
     }
-    span:hover {
+    .click:hover {
         cursor: pointer;
     }
-    span:active {
+    .click:active {
+        .wink {
+            display: none;
+        }
+        .yay {
+            display: flex;
+        }
+        p {
+            // display: block;
+            // opacity: 1;
+        }
         animation: boing 0.2s;
         @keyframes boing {
             50% {transform: translateY(-50px);}
         }
     }
 }
+
