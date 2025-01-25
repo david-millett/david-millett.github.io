@@ -8,7 +8,11 @@ const Banner = () => {
     return (
         <main className={styles.container}>
             <h1>Hey there, I'm <span>David</span>.</h1>
-            <h1>Developer, writer, and creative.</h1>
+            <div className={styles.subhead}>
+                    <h1>Developer<span>.</span></h1>
+                    <h1>Writer<span>.</span></h1>
+                    <h1>Creative<span>.</span></h1>
+            </div>
             <h2>Read on to get a feel for my work, from full-stack websites, to games, to styling. You can find me or get in touch via:</h2>
             <ul>
                 <Buttons />

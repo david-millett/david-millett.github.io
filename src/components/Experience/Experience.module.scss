@@ -29,6 +29,9 @@ $lime-main: rgb(146, 219, 78);
 .heading {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 }
 
 .line {

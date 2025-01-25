@@ -11,7 +11,7 @@ const ContactMe = () => {
     return (
         <main className={styles.container}>
             <div className="headingIntro">
-                <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Get in touch!</h1>
+                <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Contact</h1>
             </div>
             <p className="introLine">It was so nice to have you here! Want to get in touch? Zip over an email or find me on LinkedIn and GitHub!</p>
             <ul>

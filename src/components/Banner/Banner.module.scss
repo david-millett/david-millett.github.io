@@ -9,6 +9,11 @@ $lime-main: rgb(146, 219, 78);
     // margin: 0 auto;
     padding: 7.5rem 1.5em 0 1.5rem;
 
+    .subhead {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
     
     h2 {
         margin: 1em 0 2em 0;
@@ -22,9 +27,16 @@ $lime-main: rgb(146, 219, 78);
         display: flex;
     }
 
+
+
     @media (max-width: 500px) {
         h1 {
-            font-size: 2rem;
+            // font-size: 2rem;
+        }
+        .subhead {
+            flex-direction: column;
+        padding-top: 1rem;
+            gap: 0;
         }
     }
 }

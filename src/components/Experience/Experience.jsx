@@ -16,7 +16,7 @@ const cv = [
     {
         role: 'Communications & Media Officer',
         company: 'Ravensbourne University London',
-        location: 'London, UK',
+        location: 'UK',
         startDate: 'Dec 2020',
         endDate: 'Aug 2024',
         description: 'Managed, wrote, and designed internal and external communications for a creative university. Coordinated responses to adverse events and PR crises and developed a design process for digital screens to transform on-site communications and establish our identity to visitors.',
