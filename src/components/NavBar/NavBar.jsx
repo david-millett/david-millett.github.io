@@ -8,7 +8,6 @@ const NavBar = () => {
     const scrolly = (destination) => {
         scroller.scrollTo(destination,  {
             duration: 1500,
-            // delay: 100,
             smooth: 'easeInOutCubic',
             offset: -80,
         })

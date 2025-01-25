@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { animateScroll, scroller } from 'react-scroll'
 
@@ -8,17 +8,17 @@ import styles from './NavBar.module.scss'
 // Icons
 import { FaArrowUp, FaFireAlt, FaFileAlt, FaUser, FaRegSmile,FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
 
-const NavBarMobile = () => {
+const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
     
-    const [menuOpen, setMenuOpen] = useState(false)
+    // const [menuOpen, setMenuOpen] = useState(false)
     
-    const handleMenuStateChange = (state) => {
-        setMenuOpen(state.isOpen)
-    }
+    // const handleMenuStateChange = (state) => {
+    //     setMenuOpen(state.isOpen)
+    // }
 
-    const closeMenu = () => {
-        setMenuOpen(false)
-    }
+    // const closeMenu = () => {
+    //     setMenuOpen(false)
+    // }
     
     const scrolly = (destination) => {
         scroller.scrollTo(destination,  {
@@ -40,12 +40,9 @@ const NavBarMobile = () => {
             <Menu
                 right
                 width={ '100%' }
-                // height={ '100%' }
                 isOpen={menuOpen}
                 onStateChange={handleMenuStateChange}
-                // customBurgerIcon={<BiMenu />}
-                // customCrossIcon={<BiWindowClose />}
-                >
+            >
                 <ul className={styles.list}>
                     <a onClick={() => scrollyTop()}><li><span className={styles.logo}><FaArrowUp /></span>Home</li></a>
                     <a onClick={() => scrolly('skills')}><li><span className={styles.logo}><FaFireAlt /></span>Skills</li></a>

@@ -4,9 +4,7 @@ $lime-main: rgb(146, 219, 78);
 .container {
     margin: 0 auto 7.5rem auto;
     color: white;
-    // border-bottom: 3px dashed white;
     max-width: 700px;
-    // margin: 0 auto;
     padding: 7.5rem 1.5em 0 1.5rem;
 
     .subhead {
@@ -27,16 +25,13 @@ $lime-main: rgb(146, 219, 78);
         display: flex;
     }
 
-
-
     @media (max-width: 500px) {
-        h1 {
-            // font-size: 2rem;
-        }
+
         .subhead {
             flex-direction: column;
         padding-top: 1rem;
             gap: 0;
         }
     }
+    
 }
