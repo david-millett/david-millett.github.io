@@ -9,13 +9,10 @@
     .logo {
         display: flex;
         flex-direction: column;
-        // justify-content: flex-start;
         align-items: center;
         p {
-            // display: none;
             font-size: 0.6rem;
             padding-left: 3px;
-            // opacity: 0;
         }
         
     }
@@ -27,18 +24,15 @@
     }
     
     h1:hover {
-        .open {
+        .smile {
             display: none;
         }
         .wink {
             display: flex;
             p {
-                // opacity: 1;
                 animation: psst 1.2s;
                 @keyframes psst {
-                    // 0% {opacity: 0;}
                     100% {opacity: 1;}
-                    // 100% {opacity: 0;}
                 }
             }
         }
@@ -53,15 +47,14 @@
         cursor: pointer;
     }
     .click:active {
+        .smile {
+            display: none;
+        }
         .wink {
             display: none;
         }
         .yay {
             display: flex;
-        }
-        p {
-            // display: block;
-            // opacity: 1;
         }
         animation: boing 0.2s;
         @keyframes boing {

@@ -1,4 +1,3 @@
-// import { useState } from 'react'
 import { slide as Menu } from 'react-burger-menu'
 import { animateScroll, scroller } from 'react-scroll'
 
@@ -9,17 +8,7 @@ import styles from './NavBar.module.scss'
 import { FaArrowUp, FaFireAlt, FaFileAlt, FaUser, FaRegSmile,FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
 
 const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
-    
-    // const [menuOpen, setMenuOpen] = useState(false)
-    
-    // const handleMenuStateChange = (state) => {
-    //     setMenuOpen(state.isOpen)
-    // }
 
-    // const closeMenu = () => {
-    //     setMenuOpen(false)
-    // }
-    
     const scrolly = (destination) => {
         scroller.scrollTo(destination,  {
             duration: 1500,

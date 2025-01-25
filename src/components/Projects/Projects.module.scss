@@ -7,21 +7,10 @@
         flex-direction: column;
         gap: 3rem;
     }
-    // li:hover {
-        // background-color: grey;
-    // }
-    
-    // @media(max-width: 600px) {
-    //     li {
-    //         width: 95%;
-    //     }
-    // }
 }
 
 .project {
     border-radius: 10px;
-    // width: 48%;
-    // padding: 0 0 4rem 0;
     transition: 0.5s;
     img {
         width: 100%;
@@ -29,7 +18,6 @@
         margin: 1rem 0 2rem 0;
     }
     border: 2px solid rgb(95, 95, 95);
-    // border-color: white;
     background-color: rgb(28, 28, 28);
     padding: 2rem;
     ul {
@@ -58,7 +46,6 @@
 
 .description {
     margin: 1rem 0 1rem 0;
-    // color: #a0cdd1;
 }
 
 .imageContainer {

@@ -17,9 +17,7 @@ $skillFour: rgb(146, 219, 78);
     li {
         display: flex;
         align-items: center;
-        // gap: 0.5rem;
         border: 2px solid $skillTwo;
-        // padding: 0 1rem;
         border-radius: 20px;
         background-image: linear-gradient(rgb(81, 81, 81), rgb(49, 49, 49));
         transition: 0.25s;
@@ -30,23 +28,11 @@ $skillFour: rgb(146, 219, 78);
         }
     }
     li:hover {
-        // border-color: $skillFour;
         cursor: default;
-        // transform: translateY(-2px);
         animation: jiggle 0.2s;
         @keyframes jiggle {
             50% {transform: translateY(-2px);}
         }
-
-        // .icon {
-        //     color: $skillFour;
-        // }
-        // .name {
-        //     background-color: $skillFour;
-        // }
-        // div {
-        //     background: linear-gradient(to bottom right, $skillOne 0%, $skillOne 50%, $skillFour 50%, $skillFour 100%);
-        // }
     }
 }
 
@@ -66,7 +52,6 @@ $skillFour: rgb(146, 219, 78);
     align-items: center;
     background-color: $skillTwo;
     color: $skillThree;
-    // border: 2px solid $skillOne;
     padding: 0 1rem 0 0.2rem;
     height: 2rem;
     border-radius: 0 15px 15px 0;

@@ -27,13 +27,8 @@ body {
     font-family: Outfit, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
-    // display: flex;
-    // place-items: center;
     min-width: 320px;
-    // max-width: 700px;
-    // margin: 0 auto;
     min-height: 100vh;
-    // padding: 0 1.5em;
 }
 
 p {
@@ -50,9 +45,6 @@ li {
 
 .headingIntro {
     display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
     margin: 5rem 0 2rem 0;
     border-bottom: 3px dashed white;
 
@@ -62,14 +54,6 @@ li {
         display: flex;
         align-items: baseline;
         gap: 1rem;
-        // color: white;
-    }
-
-    #aboutme {
-        // align-items: flex-end;
-        // align-items: baseline;
-        // align-items: flex-start;
-        // align-items: center;
     }
 }
 
@@ -93,11 +77,6 @@ span {
     font-size: 2rem;
 }
 
-// #projects, #skills, #experience, #aboutme, #contact {
-//     scroll-margin-top: 100px;
-// }
-
-
 .bm-burger-button {
     position: fixed;
     width: 1.75rem;
@@ -111,20 +90,9 @@ span {
 }
 
 .bm-burger-bars-hover {
-    // background: white;
     box-shadow: 0 0 10px $lime-main;
 }
 
 .bm-cross {
     background: $lime-main;
-}
-
-.bm-cross-button {
-    // height: 2rem;
-    // width: 2rem;
-}
-
-.bm-menu {
-    // top: 0px;
-    // background: black;
 }
