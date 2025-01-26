@@ -7,6 +7,25 @@
         flex-direction: column;
         gap: 3rem;
     }
+    h2 {
+        display: flex;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    h2 p {
+        font-family: 'Kode Mono';
+        color: white;
+        font-size: 0.75rem;
+        margin-top: 1.75rem;
+        display: none;
+    }
+    h2:hover {
+        transform: scale(1.1);
+        p {
+            display: block;
+            position: absolute;
+        }
+    }
 }
 
 .project {
@@ -30,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 3ch;
     h1 {
         font-size: 2.4rem;
     }
@@ -40,6 +59,10 @@
         gap: 1rem;
         h2 {
             font-size: 1rem;
+            p {
+                margin-top: 1.25rem;
+                // font-size: 0.5rem;
+            }
         }
     }
 }
@@ -57,6 +80,10 @@
     display: flex;
     gap: 0.5rem;
 }
+
+// .techstack:hover {
+//     transform: scale(1.1);
+// }
 
 .buttonContainer {
     display: flex;

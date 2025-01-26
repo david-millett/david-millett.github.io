@@ -8,7 +8,7 @@
     animation: bounce 2s infinite;
     
     @keyframes bounce {
-        50% {transform: translateY(-10px);}
+        50% {transform: translateY(-5px);}
     }
     
     a {
@@ -21,7 +21,7 @@
     a:hover {
         cursor: pointer;
     }
-    @media(min-width: 751px) {
-        display: none;
-    }
+    // @media(min-width: 751px) {
+    //     display: none;
+    // }
 }

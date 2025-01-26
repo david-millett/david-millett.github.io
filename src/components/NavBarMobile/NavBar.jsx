@@ -5,7 +5,7 @@ import { animateScroll, scroller } from 'react-scroll'
 import styles from './NavBar.module.scss'
 
 // Icons
-import { FaArrowUp, FaFireAlt, FaFileAlt, FaUser, FaRegSmile,FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
+import { FaArrowUp, FaFireAlt, FaFolderOpen, FaUser, FaRegSmile, FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
 
 const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
 
@@ -35,7 +35,7 @@ const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
                 <ul className={styles.list}>
                     <a onClick={() => scrollyTop()}><li><span className={styles.logo}><FaArrowUp /></span>Home</li></a>
                     <a onClick={() => scrolly('skills')}><li><span className={styles.logo}><FaFireAlt /></span>Skills</li></a>
-                    <a onClick={() => scrolly('projects')}><li><span className={styles.logo}><FaFileAlt /></span>Projects</li></a>
+                    <a onClick={() => scrolly('projects')}><li><span className={styles.logo}><FaFolderOpen /></span>Projects</li></a>
                     <a onClick={() => scrolly('experience')}><li><span className={styles.logo}><FaUser /></span>Experience</li></a>
                     <a onClick={() => scrolly('aboutme')}><li><span className={styles.logo}><FaRegSmile /></span>About Me</li></a>
                     <a onClick={() => scrolly('contact')}><li><span className={styles.logo}><FaRegAddressCard /></span>Contact</li></a>

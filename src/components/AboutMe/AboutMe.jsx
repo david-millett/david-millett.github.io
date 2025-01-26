@@ -3,6 +3,14 @@ import styles from './AboutMe.module.scss'
 
 // Icons
 import { FaRegSmile, FaRegGrinWink, FaRegLaughSquint } from 'react-icons/fa'
+import { BiChevronDown } from 'react-icons/bi'
+
+const interests = [
+    'Japanese',
+    'Plants',
+    'Fish',
+    'Fitness',
+]
 
 const AboutMe = () => {
     return (
@@ -16,7 +24,18 @@ const AboutMe = () => {
                     </div>About Me
                 </h1>
             </div>
-                {/* <p>With a decade of experience in journalism, communications, and digital publishing - in both medical and design fields - I have always been drawn to roles that combine logic and creativity. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised I was trying to code without the best tools. Discovering the possibilities provided by coding languages struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p> */}
+            <p>With a decade of experience in journalism, communications, and digital publishing - in both medical and design fields - I have always been drawn to roles that combine logic and creativity. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised I was trying to code without the best tools. Discovering the possibilities provided by coding languages struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p>
+            <h2>Interests</h2>
+            <ul>
+                {interests.map(interest => {
+                    return (
+                        <li key={interest}>
+                            <h1>{interest}</h1>
+                            <BiChevronDown />
+                        </li>
+                    )
+                })}
+            </ul>
         </main>
     )
 }
