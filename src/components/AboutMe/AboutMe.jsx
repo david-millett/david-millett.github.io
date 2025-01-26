@@ -75,7 +75,7 @@ const AboutMe = () => {
                                 {interest.name}
                                 {interest.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
                             </li>
-                            {interest.reveal && <p className={styles.infoPhone}><br />{interest.desc}<br /><br /></p>}
+                            {interest.reveal && <p className={`${styles.infoPhone} ${styles.info}`}><br />{interest.desc}<br /><br /></p>}
                         </div>
                     )
                 })}
@@ -83,7 +83,9 @@ const AboutMe = () => {
 
             {interests.map(interest => {
                 return (
-                    <p key={interest.name} className={styles.infoDesktop}>{interest.reveal && interest.desc}</p>
+                    <>
+                        {interest.reveal && <p key={interest.name} className={`${styles.infoDesktop} ${styles.info}`}>{interest.desc}</p>}
+                    </>
                 )
             })}
             
