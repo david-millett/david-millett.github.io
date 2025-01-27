@@ -20,7 +20,7 @@ const AboutMe = () => {
             setJpReveal(!jpReveal)
             setPlantsReveal(false)
             setGymReveal(false)
-        } else if (e === 'Outdoors-indoors') {
+        } else if (e === 'Nature') {
             setPlantsReveal(!plantsReveal)
             setJpReveal(false)
             setGymReveal(false)
@@ -35,19 +35,19 @@ const AboutMe = () => {
         {
             name: 'Japanese',
             icon: <TbLanguageHiragana />,
-            desc: "I spent two incredible years living in Japan. I enjoy studying Japanese and reading manga in its native language. On my last trip, I picked up the full 鬼滅の刃 (Demon Slayer) set!",
+            desc: "I spent two incredible years living in Japan. I enjoy studying Japanese and reading manga in its native language. On my last trip, I picked up the full 鬼滅の刃 (Demon Slayer) set! I also love JRPGs, and don't think anything will ever be able to topple Final Fantasy X in my heart.",
             reveal: jpReveal
         },
         {
-            name: 'Outdoors-indoors',
+            name: 'Nature',
             icon: <LuFish />,
-            desc: "I love the artistic side of displaying them - such as using bonsai techniques to shape branches or thrifting the perfect pot. I also love aquascaping fish tanks to create mini worlds… next, I’m dying to create a terrarium complete with poison dart frogs!",
+            desc: "Nature and living things soothe my soul - I actually also have a Zoology degree! I love bringing the outside into my home and am fascinated by the artistic side of displaying plants - such as using bonsai techniques to gently shape branches or thrifting the perfect pot. I also enjoy aquascaping fish tanks to create mini worlds… for my next project, I’m dying to create a terrarium complete with poison dart frogs!",
             reveal: plantsReveal
         },
         {
             name: 'Fitness',
             icon: <LuDumbbell />,
-            desc: "Recently, you’ll often catch me unwinding down at the gym or out and about getting those steps in after a long day spent at the desk.",
+            desc: "Recently, you’ll often catch me unwinding down at the gym or out and about getting those steps in after a long day spent at the desk. You might think I'm crazy, but I love to relax by taking on a challenge! There are lots of stats and numbers to be had when you're into fitness - and I love a task that lets you see and track progress!",
             reveal: gymReveal
         },
     ]
@@ -63,8 +63,9 @@ const AboutMe = () => {
                     </div>About Me
                 </h1>
             </div>
-            <p>With a decade of experience in journalism, communications, and digital publishing - in both medical and design fields - I have always been drawn to roles that combine logic and creativity. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised I was trying to code without the best tools.</p>
-            <p className={styles.secondPara}>Discovering the possibilities provided by coding languages struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p>
+            <h3>Hello again!</h3>
+            <p>I am a junior software engineer with experience in journalism, communications, and digital publishing. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised I was trying to code without the best tools.</p>
+            <p className={styles.secondPara}>Discovering the possibilities provided by coding struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p>
             <h2>Interests</h2>
             <ul>
                 {interests.map(interest => {
@@ -75,7 +76,7 @@ const AboutMe = () => {
                                 {interest.name}
                                 {interest.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
                             </li>
-                            {interest.reveal && <p className={`${styles.infoPhone} ${styles.info}`}><br />{interest.desc}<br /><br /></p>}
+                            {interest.reveal && <p className={`${styles.infoPhone} ${styles.info}`}>{interest.desc}</p>}
                         </div>
                     )
                 })}

@@ -27,7 +27,7 @@ const cv = [
         location: 'Fukuoka, Japan',
         startDate: 'Feb 2018',
         endDate: 'Dec 2019',
-        description: 'Planned and taught bespoke English lessons forover 300 students aged 3 - 83 in Japan. Publicised the company through media/advertising work, including TV interviews to help grow the business and successfully recruit new students.',
+        description: 'Planned and taught bespoke English lessons for over 300 students aged 3 - 83 in Japan. Publicised the company through media/advertising work, including TV interviews to help grow the business and successfully recruit new students.',
     },
     {
         role: 'Senior News Reporter',
@@ -35,7 +35,7 @@ const cv = [
         location: 'London, UK',
         startDate: 'Feb 2014',
         endDate: 'Jan 2018',
-        description: 'Wrote and published daily news, features, and social media posts for GPonline, a news site and magazine for doctors. Designed infographics and figures for professional publication, analysed raw datasets in Excel to uncover agenda-setting headlines and statistical trends, and transformed expert topics including medicine, politics, healthcare, law, and science into engaging, readable copy.',
+        description: 'Wrote daily news and features for an online magazine for doctors. Designed infographics and figures, analysed raw datasets to uncover agenda-setting headlines, and transformed expert topics including medicine, politics, healthcare, law, and science into engaging copy.',
     },
 ]
 
@@ -45,7 +45,7 @@ const Experience = () => {
             <div className="headingIntro">
                 <h1 id='experience'><span className='logo'><FaUser /></span>Experience</h1>
             </div>
-            <p className="introLine">It's true, I took the roundabout path to becoming a software engineer! Along the way, I honed valuable skills including writing, design, communication, and project managment.</p>
+            <h3 className="introLine">I took a slightly roundabout path to becoming a software engineer... Along the way, I honed valuable skills including writing, design, communication, and project management.</h3>
             <ul>
                 {cv.map(job => {
                     return (

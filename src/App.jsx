@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // * Components
 import NavBar from "./components/NavBar/NavBar";
-import NavBarMobile from "./components/NavBarMobile/NavBar";
+import NavBarMobile from "./NavBar copy/NavBar";
 
 // * Pages
 import Landing from "./pages/Landing/Landing";

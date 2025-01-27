@@ -13,7 +13,7 @@ const ContactMe = () => {
             <div className="headingIntro">
                 <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Contact</h1>
             </div>
-            <p className="introLine">It was so nice to have you here! Want to get in touch? Zip over an email or find me on LinkedIn and GitHub!</p>
+            <h2 className="introLine">Thank you for your time, it was great to have you here! Want to get in touch? Catch me at one of the links below:</h2>
             <ul>
                 <Buttons />
             </ul>
