@@ -26,7 +26,7 @@ $lime-main: rgb(146, 219, 78);
     }
 
     @media (max-width: 500px) {
-
+        padding-top: 3.5rem;
         .subhead {
             flex-direction: column;
         padding-top: 1rem;

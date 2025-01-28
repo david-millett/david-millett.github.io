@@ -36,6 +36,7 @@ const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
             <Menu
                 right
                 width={ '100%' }
+                noOverlay
                 isOpen={menuOpen}
                 onStateChange={(state) => handleMenuStateChange(state)}
             >
