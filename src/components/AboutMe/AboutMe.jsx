@@ -84,9 +84,9 @@ const AboutMe = () => {
 
             {interests.map(interest => {
                 return (
-                    <>
-                        {interest.reveal && <p key={interest.name} className={`${styles.infoDesktop} ${styles.info}`}>{interest.desc}</p>}
-                    </>
+                    <div key={interest.name}>
+                        {interest.reveal && <p className={`${styles.infoDesktop} ${styles.info}`}>{interest.desc}</p>}
+                    </div>
                 )
             })}
             
