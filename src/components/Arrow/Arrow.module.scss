@@ -12,8 +12,13 @@ $lime-dark: rgb(107, 160, 56);
     
     a {
         opacity: 0.5;
-        animation: bounce 2s infinite;
         transition: 0.5s;
+        // background-color: #242424;
+        border-radius: 500px;
+        width: 4rem;
+        height: 4rem;
+        padding: 0.5rem;
+        animation: bounce 2s infinite;
         
         @keyframes bounce {
             50% {
@@ -21,12 +26,8 @@ $lime-dark: rgb(107, 160, 56);
                 opacity: 0.75;
             }
         }
-        // background-color: #242424;
-        border-radius: 500px;
-        width: 4rem;
-        height: 4rem;
-        padding: 0.5rem;
     }
+    
     a:hover {
         cursor: pointer;
         color: $lime-main;
