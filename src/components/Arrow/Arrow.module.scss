@@ -27,14 +27,14 @@ $lime-dark: rgb(107, 160, 56);
             }
         }
     }
-    
+
     a:hover {
         cursor: pointer;
-        color: $lime-main;
+        // color: $lime-main;
     }
-    a:active {
-        color: $lime-dark;
-    }
+    // a:active {
+    //     color: $lime-dark;
+    // }
     // @media(min-width: 751px) {
     //     display: none;
     // }

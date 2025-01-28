@@ -5,10 +5,11 @@ $lime-dark: rgb(107, 160, 56);
 .container {
     display: flex;
     justify-content: space-around;
-    height: 4.5rem;
-    position: sticky;
-    top: 0;
-    background-color: #242424;
+    // align-items: center;
+    height: 100%;
+    // position: sticky;
+    // top: 0;
+    // background-color: #242424;
     font-family: 'Kode Mono';
     max-width: 750px;
     margin: 0 auto;

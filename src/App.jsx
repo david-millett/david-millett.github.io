@@ -2,7 +2,8 @@
 import { useState } from "react";
 
 // * Components
-import NavBar from "./components/NavBar/NavBar";
+import NavBarBar from "./components/NavBarBar/NavBarBar";
+// import NavBar from "./components/NavBar/NavBar";
 import NavBarMobile from "./components/NavBarMobile/NavBar";
 import Arrow from "./components/Arrow/Arrow";
 
@@ -23,7 +24,8 @@ const App = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBarBar />
+      {/* <NavBar /> */}
       <NavBarMobile closeMenu={closeMenu} menuOpen={menuOpen} handleMenuStateChange={handleMenuStateChange} />
       {/* <Routes> */}
         {/* <Route path="/" element={<Landing />} /> */}

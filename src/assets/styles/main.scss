@@ -101,4 +101,9 @@ span {
 .bm-menu {
     position: fixed;
     width: 100%;
+    z-index: 10;
+}
+
+.bm-overlay {
+    z-index: 9;
 }
