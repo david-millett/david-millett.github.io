@@ -5,14 +5,21 @@ import { animateScroll, scroller } from 'react-scroll'
 import styles from './NavBar.module.scss'
 
 // Icons
-import { FaArrowUp, FaFireAlt, FaFolderOpen, FaUser, FaRegSmile, FaRegAddressCard, FaWindowClose } from 'react-icons/fa'
+import { 
+    FaArrowUp,
+    FaFireAlt,
+    FaFolderOpen,
+    FaUser,
+    FaRegSmile,
+    FaRegAddressCard,
+    FaWindowClose
+} from 'react-icons/fa'
 
 const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
 
     const scrolly = (destination) => {
         scroller.scrollTo(destination,  {
             duration: 1500,
-            // delay: 100,
             smooth: 'easeInOutCubic',
             offset: -80,
         })
@@ -30,7 +37,7 @@ const NavBarMobile = ({ menuOpen, handleMenuStateChange, closeMenu }) => {
                 right
                 width={ '100%' }
                 isOpen={menuOpen}
-                onStateChange={handleMenuStateChange}
+                onStateChange={(state) => handleMenuStateChange(state)}
             >
                 <ul className={styles.list}>
                     <a onClick={() => scrollyTop()}><li><span className={styles.logo}><FaArrowUp /></span>Home</li></a>
