@@ -13,10 +13,12 @@ const ContactMe = () => {
             <div className="headingIntro">
                 <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Contact</h1>
             </div>
-            <h2 className="introLine">Thank you for your time, it was great to have you here! Want to get in touch? Catch me at one of the links below:</h2>
-            <ul>
-                <Buttons />
-            </ul>
+                <div className={styles.body}>
+                <h2>Thank you for your time, it was great to have you here! Want to get in touch? Catch me at one of the links below:</h2>
+                <ul>
+                    <Buttons />
+                </ul>
+            </div>
             {/* <p>Or, simply fill in the form to reach out!</p>
             <h3>Say hey</h3> */}
             {/* <form>

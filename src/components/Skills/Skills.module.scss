@@ -4,10 +4,11 @@ $skillThree: rgb(81, 81, 81);
 $skillFour: rgb(146, 219, 78);
 
 .container {
-    max-width: 700px;
-    margin: 0 auto;
+    // max-width: 700px;
     padding: 0 1.5em;
     ul {
+        max-width: 800px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

@@ -12,10 +12,10 @@ const Landing = () => {
         <main className="content">
             <NavBarBar />
             <Banner />
-            <Skills />
             <Projects />
-            <Experience />
             <AboutMe />
+            <Skills />
+            <Experience />
             <ContactMe />
         </main>
     )

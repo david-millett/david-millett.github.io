@@ -1,5 +1,5 @@
 .container {
-    max-width: 700px;
+    // max-width: 700px;
     margin: 0 auto;
     padding: 0 1.5em;
     ul {
@@ -31,14 +31,17 @@
 .project {
     border-radius: 10px;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
     img {
         width: 100%;
         border-radius: 10px;
-        margin: 1rem 0 2rem 0;
+        // max-width: 700px;
+        margin: 0 auto;
     }
     border: 2px solid rgb(95, 95, 95);
     background-color: rgb(28, 28, 28);
-    padding: 1.5rem 2rem 2rem 2rem;
+    padding: 2rem;
     ul {
         display: flex;
         justify-content: center;
@@ -71,10 +74,11 @@
     margin: 1rem 0 1rem 0;
 }
 
-.imageContainer {
-    display: flex;
-    justify-content: center;
-}
+// .imageContainer {
+//     display: flex;
+//     justify-content: center;
+//     // order: 1;
+// }
 
 .techstack {
     display: flex;
@@ -87,5 +91,93 @@
 
 .buttonContainer {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    margin: 1rem 0 4rem 0;
+}
+
+.projInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+// @media (min-width:900px) {
+//     .container {
+//         padding: 0 8rem;
+//     }
+// }
+
+// @media (max-width:1300px) {
+    // .container {
+        // margin: 5rem;
+    // }
+
+
+//     .project {
+//         flex-direction: column;
+//         // img {
+//         //     order: 1;
+//         // }
+//         // div {
+//         //     order: 2;
+//         // }
+//         .projectTitle {
+//             order: 0;
+//         }
+//         .projText{
+//             order: 1;
+//         }
+//         .image {
+//             order: 2;
+//         }
+//         .buttonContainer {
+//             order: 3;
+//         }
+//     }
+//     .container {
+
+//     }
+// }
+
+@media (min-width: 1377px) {
+    .container {
+        // max-width: 1400px;
+        // padding: 0 4rem;
+    }
+    .projectTitle {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 0;
+    }
+    .project {
+        flex-direction: row;
+        // justify-content: space-between;
+        gap: 2rem;
+        // align-items: center;
+        img {
+            // width: 750px;
+            height: 400px;
+        }
+    }
+    .odd {
+        flex-direction: row-reverse;
+    }
+    .buttonContainer {
+        margin: 0;
+    }
+    .projInfo {
+        justify-content: space-between;
+    }
+    .description {
+        margin-bottom: 0;
+    }
+    .projText {
+        // width: 500px;
+    }
+    // .projInfo {
+    //     order: 1;
+    // }
+    // .buttonContainer {
+    //     order: 1;
+    // }
 }

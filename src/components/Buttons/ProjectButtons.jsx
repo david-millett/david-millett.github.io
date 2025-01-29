@@ -10,7 +10,7 @@ import { FaGlobe } from "react-icons/fa"
 const ProjectButtons = ({ link, readme, colour }) => {
     return (
         <main className={styles.container}>
-            <Link to={link} target='_blank'><li style={{color: colour, borderColor: colour}}><FaGlobe />Check it out</li></Link>
+            <Link to={link} target='_blank'><li style={{color: colour, borderColor: colour}}><FaGlobe className={styles.logo} />Check it out</li></Link>
             <Link to={readme} target='_blank'><li style={{color: colour, borderColor: colour}}><FaGithub />ReadMe</li></Link>
         </main>
     )

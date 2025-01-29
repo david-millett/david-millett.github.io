@@ -104,24 +104,28 @@ const Projects = () => {
             <ul>
                 {portfolio.map(project => {
                     return (
-                        <li key={project.number} className={styles.project} style={{borderColor: project.colour, boxShadow: `0px 0px 10px ${project.colour}`}}>
-                            <div className={styles.projectTitle}>
-                                <h1 style={{color: project.colour}}>{project.name}</h1>
-                                <div style={{color: project.colour}} className={styles.techstack}>
-                                    {project.techstack.map(tech => {
-                                        return (
-                                            <h2 key={tech.text}>{tech.icon}<p>{tech.text}</p></h2>
-                                        )
-                                    })}
+                        <li key={project.number} className={`${styles.project} ${project.number % 2 ? styles.odd : ''}`} style={{borderColor: project.colour, boxShadow: `0px 0px 10px ${project.colour}`}}>
+                            <div className={styles.projInfo}>
+                                <div className={styles.projectTitle}>
+                                    <h1 style={{color: project.colour}}>{project.name}</h1>
+                                    <div style={{color: project.colour}} className={styles.techstack}>
+                                        {project.techstack.map(tech => {
+                                            return (
+                                                <h2 key={tech.text}>{tech.icon}<p>{tech.text}</p></h2>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                                <div className={styles.projText}>
+                                    <h3>{project.subtitle}</h3>
+                                    <p>{project.team} project - {project.timeframe}</p>
+                                    <p className={styles.description}>{project.description}</p>
+                                </div>
+                                <div className={styles.buttonContainer}>
+                                    <ProjectButtons link={project.link} readme={project.readme} colour={project.colour} />
                                 </div>
                             </div>
-                            <h3>{project.subtitle}</h3>
-                            <p>{project.team} project - {project.timeframe}</p>
-                            <p className={styles.description}>{project.description}</p>
-                            <div className={styles.imageContainer}><img src={project.picture} /></div>
-                            <div className={styles.buttonContainer}>
-                                <ProjectButtons link={project.link} readme={project.readme} colour={project.colour} />
-                            </div>
+                            <img className={styles.image} src={project.picture} />
                         </li>
                     )
                 })}

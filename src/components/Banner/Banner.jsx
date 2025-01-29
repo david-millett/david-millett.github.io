@@ -7,7 +7,7 @@ import Buttons from "../Buttons/ContactButtons"
 const Banner = () => {
     return (
         <main className={styles.container}>
-            <h1>Hey there, I'm <span>David</span>.</h1>
+            <h1>Hey there, I'm <span>David</span>!</h1>
             <div className={styles.subhead}>
                     <h1>Developer<span>.</span></h1>
                     <h1>Writer<span>.</span></h1>

@@ -34,6 +34,14 @@ $lime-main: rgb(146, 219, 78);
         background-image: linear-gradient(rgb(49, 49, 49), rgb(81, 81, 81));
     }
     @media(max-width: 460px) {
+    }
+}
+
+@media(max-width: 460px) {
+    .logo {
+        display: none;
+    }
+    .contact {
         flex-direction: column;
     }
 }
