@@ -75,7 +75,7 @@ const AboutMe = () => {
                         {interests.map(interest => {
                             return (
                                 <div key={interest.name}>
-                                    <li onClick={() => toggleReveal(interest.name)} className={interest.reveal ? styles.pressed : ''} >
+                                    <li onClick={() => toggleReveal(interest.name)} className={`${styles.more} ${interest.reveal ? styles.pressed : styles.unpressed}`} >
                                         {interest.icon}
                                         {interest.name}
                                         {interest.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}

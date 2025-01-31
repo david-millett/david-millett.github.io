@@ -103,8 +103,11 @@ const Experience = () => {
                                     <p onClick={() => toggleReveal(job.code)} className={`${styles.more} ${job.reveal ? styles.pressed : ''}`}>{job.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}</p>
                                 </div>
                                 <h4><em>{job.company}</em></h4>
-                                <p>{job.location}, {job.startDate} - {job.endDate}</p>
-                                {job.reveal && <p className={styles.desc}>{job.description}</p>}
+                                {job.reveal && 
+                                    <div>
+                                        <p>{job.location}, {job.startDate} - {job.endDate}</p>
+                                        <p className={styles.desc}>{job.description}</p>
+                                    </div>}
                             {/* </div> */}
                         </li>
                     )

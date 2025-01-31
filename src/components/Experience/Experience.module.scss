@@ -11,12 +11,15 @@
     ul {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
     li {
         display: flex;
         flex-direction: column;
         gap: 0.25rem;
+        background-color: $background-section;
+        padding: 1rem;
+        border-radius: 20px;
 
     }
 }
@@ -63,6 +66,8 @@
     justify-content: flex-end;
     gap: 1rem;
     margin-top: 1rem;
+    font-family: 'Kode Mono';
+    font-size: 0.75rem;
     P {
         padding: 0.5rem 1rem;
     }
