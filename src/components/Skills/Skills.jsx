@@ -11,15 +11,15 @@ const skillsList = [
     {name: 'CSS', icon: <DiCss3 />},
     {name: 'SASS', icon: <FaSass />},
     {name: 'JavaScript', icon: <FaJs />},
-    {name: 'React.js', icon: <FaReact />},
+    {name: 'React', icon: <FaReact />},
     {name: 'Bootstrap', icon: <FaBootstrap />},
     {name: 'Node.js', icon: <FaNodeJs />},
     {name: 'MongoDB', icon: <DiMongodb />},
-    {name: 'Express.js', icon: <SiExpress />},
+    {name: 'Express', icon: <SiExpress />},
     {name: 'Python', icon: <FaPython />},
     {name: 'Django', icon: <SiDjango />},
     {name: 'PostgreSQL', icon: <SiPostgresql />},
-    {name: 'npm/pip', icon: <FaNpm />},
+    {name: 'npm', icon: <FaNpm />},
     {name: 'Git/GitHub', icon: <FaGithub />},
 ]
 
@@ -30,6 +30,7 @@ const Skills = () => {
                 <h1 id='skills'><span className='logo'><FaFireAlt /></span>Skills</h1>
             </div>
             {/* <p className="introLine">Here are some of the key skills I have been using, and continue to learn about: I adore to learn and improve, so watch this space!</p> */}
+            {/* <h3>Technical Skills</h3> */}
             <ul>
                 {skillsList.map((skill, index) => {
                     return (

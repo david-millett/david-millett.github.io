@@ -31,6 +31,7 @@ body {
     max-width: 1400px;
     min-height: 100vh;
     margin: 0 auto;
+    // padding: 0 1.5rem;
 }
 
 p {
@@ -128,6 +129,7 @@ span {
 @media (min-width: 1210px) {
     .twins {
         display: flex;
+        gap: 4rem;
     }
     .widescreenOnly {
         display: block;
@@ -135,4 +137,13 @@ span {
     .widescreenNone {
         display: none;
     }
+}
+
+#skillsExp {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#skillsExpIntro {
+    padding: 0 1.5rem;
 }

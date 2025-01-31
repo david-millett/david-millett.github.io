@@ -5,7 +5,7 @@ $skillFour: rgb(146, 219, 78);
 
 .container {
     // max-width: 700px;
-    // padding: 0 1.5em;
+    padding: 0 1.5em;
     ul {
         // max-width: 800px;
         margin: 0 auto;
@@ -14,6 +14,11 @@ $skillFour: rgb(146, 219, 78);
         justify-content: center;
         gap: 1rem 0.5rem;
         font-family: 'Kode Mono';
+        // padding: 2rem;
+        // border: 2px solid rgb(95, 95, 95);
+        // background-color: rgb(28, 28, 28);
+        border-radius: 10px;
+        // font-size: 0.75rem;
     }
     li {
         display: flex;
@@ -62,3 +67,12 @@ $skillFour: rgb(146, 219, 78);
 // .html {
     // color: red;
 // }
+
+@media (min-width: 1210px) {
+    .container {
+        ul {
+            width: 340px;
+        }
+        padding-right: 0;
+    }
+}

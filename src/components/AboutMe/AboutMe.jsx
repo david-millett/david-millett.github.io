@@ -63,37 +63,37 @@ const AboutMe = () => {
                     </div>About Me
                 </h1>
             </div>
-            <h3>Hello!</h3>
-            <p>I am a junior software engineer with experience in journalism, communications, and digital publishing. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised where my true passion was... and that I was trying to code without the best tools!</p>
-            <p className={styles.secondPara}>Discovering the possibilities provided by coding struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p>
-            <h2>Interests</h2>
-            <ul>
-                {interests.map(interest => {
-                    return (
-                        <div key={interest.name}>
-                            <li onClick={() => toggleReveal(interest.name)} className={interest.reveal ? styles.pressed : ''} >
-                                {interest.icon}
-                                {interest.name}
-                                {interest.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
-                            </li>
-                            {interest.reveal && <p className={`${styles.infoPhone} ${styles.info}`}>{interest.desc}</p>}
-                        </div>
-                    )
-                })}
-            </ul>
-
-            {interests.map(interest => {
-                return (
-                    <div key={interest.name}>
-                        {interest.reveal && <p className={`${styles.infoDesktop} ${styles.info}`}>{interest.desc}</p>}
-                    </div>
-                )
-            })}
-            
-            {/* {jpReveal && <p className={styles.info}>I spent two incredible years living in Japan. I enjoy studying Japanese and reading manga in its native language. On my last trip, I picked up the full 鬼滅の刃 (Demon Slayer) set!</p>} */}
-            {/* {plantsReveal && <p className={styles.info}>I love the artistic side of displaying them - such as using bonsai techniques to shape branches or thrifting the perfect pot. I also love aquascaping fish tanks to create mini worlds… next, I’m dying to create a terrarium complete with poison dart frogs!</p>} */}
-            {/* {gymReveal && <p className={styles.info}>Recently, you’ll often catch me unwinding down at the gym or out and about getting those steps in after a long day spent at the desk.</p>} */}
-            {/* {isRevealed && <p>hey</p>} */}
+            <div className={styles.sections}>
+                <div className={styles.section1}>
+                    <h2>Hello!</h2>
+                    <p>I am a junior software engineer with experience in journalism, communications, and digital publishing. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised where my true passion was... and that I was trying to code without the best tools!</p>
+                    <p className={styles.secondPara}>Discovering the possibilities provided by coding struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p>
+                </div>
+                <div className={styles.section2}>
+                    <h2>Interests</h2>
+                    <ul>
+                        {interests.map(interest => {
+                            return (
+                                <div key={interest.name}>
+                                    <li onClick={() => toggleReveal(interest.name)} className={interest.reveal ? styles.pressed : ''} >
+                                        {interest.icon}
+                                        {interest.name}
+                                        {interest.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
+                                    </li>
+                                    {interest.reveal && <p className={`${styles.infoPhone} ${styles.info}`}>{interest.desc}</p>}
+                                </div>
+                            )
+                        })}
+                    </ul>
+                    {interests.map(interest => {
+                        return (
+                            <div key={interest.name}>
+                                {interest.reveal && <p className={`${styles.infoDesktop} ${styles.info}`}>{interest.desc}</p>}
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
         </main>
     )
 }
