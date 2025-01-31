@@ -1,8 +1,11 @@
+// Variables
+@use '../../../src/assets/styles/variables' as *;
+
 .container {
     height: 4.5rem;
     position: sticky;
     top: 0;
-    background-color: #242424;
+    background-color: $background;
     // max-width: none;
     // padding: 0;
 }

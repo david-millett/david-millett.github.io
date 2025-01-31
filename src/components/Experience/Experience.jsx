@@ -69,12 +69,26 @@ const Experience = () => {
         }
     }
 
+    const openAll = () => {
+        setGaReveal(true)
+        setRaveReveal(true)
+        setAeonReveal(true)
+        setGpReveal(true)
+    }
+
+    const closeAll = () => {
+        setGaReveal(false)
+        setRaveReveal(false)
+        setAeonReveal(false)
+        setGpReveal(false)
+    }
+
     return (
         <main className={styles.container}>
             <div className="headingIntro widescreenNone">
                 <h1 id='experience'><span className='logo'><FaUser /></span>Experience</h1>
             </div>
-            <h3 className="introLine widescreenNone">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, built relationships with a wide range of people, honed valuable skills including writing, design, and project management!</h3>
+            <h3 className="introLine widescreenNone">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, made connections with people, honed valuable skills including writing, design, and project management!</h3>
             {/* <p>Global career, soft skills, communication with large range of people, translating technical subjects to others</p> */}
             <ul>
                 {cv.map(job => {
@@ -82,7 +96,7 @@ const Experience = () => {
                         <li key={job.role}>
                             {/* <div>
                                 <div className={styles.line}></div>
-                            </div> */}
+                                </div> */}
                             {/* <div> */}
                                 <div className={styles.heading}>
                                     <h3>{job.role}</h3>
@@ -96,6 +110,10 @@ const Experience = () => {
                     )
                 })}
             </ul>
+            <div className={styles.openClose}>
+                <p onClick={() => openAll()} className={styles.more}>Open all</p>
+                <p onClick={() => closeAll()} className={styles.more}>Close all</p>
+            </div>
         </main>
     )
 }

@@ -1,3 +1,6 @@
+// Variables
+@use '../../../src/assets/styles/variables' as *;
+
 .container {
     // max-width: 700px;
     margin: 0 auto;
@@ -14,7 +17,7 @@
     }
     h2 p {
         font-family: 'Kode Mono';
-        color: white;
+        color: $text;
         font-size: 0.75rem;
         margin-top: 1.75rem;
         display: none;
@@ -39,8 +42,8 @@
         // max-width: 700px;
         margin: 0 auto;
     }
-    border: 2px solid rgb(95, 95, 95);
-    background-color: rgb(28, 28, 28);
+    border: 2px solid $border-section;
+    background-color: $background-section;
     padding: 2rem;
     ul {
         display: flex;

@@ -21,7 +21,7 @@ const Landing = () => {
             <div id='skillsExp' className='headingIntro widescreenOnly'>
                 <h1 id='skills'><span className='logo'><FaFireAlt /></span>Skills and Experience</h1>
             </div>
-            <h3 id='skillsExpIntro' className="introLine widescreenOnly">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, built relationships with a wide range of people, honed valuable skills including writing, design, and project management!</h3>
+            <h3 id='skillsExpIntro' className="introLine widescreenOnly">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, made connections with people, honed valuable skills including writing, design, and project management!</h3>
             <div className="twins">
                 <Skills />
                 <Experience />

@@ -1,6 +1,5 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
-$lime-dark: rgb(107, 160, 56);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 .container {
     display: flex;
@@ -11,7 +10,7 @@ $lime-dark: rgb(107, 160, 56);
     padding: 0 2rem 2rem 0;
     
     a {
-        background-color: #242424;
+        background-color: $background;
         border-radius: 500px;
         width: 4rem;
         height: 4rem;

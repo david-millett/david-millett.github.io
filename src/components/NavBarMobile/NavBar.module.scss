@@ -1,6 +1,5 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
-$lime-dark: rgb(107, 160, 56);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 // .container {
     // background-color: #242424;

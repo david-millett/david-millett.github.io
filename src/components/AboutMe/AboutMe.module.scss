@@ -1,6 +1,5 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
-$lime-dark: rgb(107, 160, 56);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 .container {
     // max-width: 700px;
@@ -87,7 +86,7 @@ $lime-dark: rgb(107, 160, 56);
         color: $lime-main;
         border-color: $lime-main;
         // background-color: rgba(255, 255, 255, 0.191);
-        background-color: rgba(100, 212, 111, 0.163);
+        background-color: $lime-transparent;
         // transform: translateY(-5px);
     }
     li:active {
@@ -117,8 +116,8 @@ $lime-dark: rgb(107, 160, 56);
 }
 
 .info {
-    border: 2px solid rgb(95, 95, 95);
-    background-color: rgb(28, 28, 28);
+    border: 2px solid $border-section;
+    background-color: $background-section;
     padding: 1rem;
     border-radius: 10px;
     margin-top: 1rem;
@@ -147,7 +146,7 @@ $lime-dark: rgb(107, 160, 56);
 }
 
 .pressed {
-    background-color: rgb(28, 28, 28);
+    background-color: $background-section;
     color: $lime-main;
     border-color: $lime-main;
     transform: translateY(0.5rem);

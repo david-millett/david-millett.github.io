@@ -1,9 +1,5 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
-$lime-yellow: rgb(226, 240, 118);
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+// Variables
+@use './variables' as *;
 
 * {
     margin: 0;
@@ -25,8 +21,8 @@ $lime-yellow: rgb(226, 240, 118);
 
 body {
     font-family: Outfit, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: $text;
+    background-color: $background;
     min-width: 320px;
     max-width: 1400px;
     min-height: 100vh;
@@ -35,7 +31,7 @@ body {
 }
 
 p {
-    color: rgb(193, 193, 193);
+    color: $text-dark;
 }
 
 h1 {
@@ -49,7 +45,7 @@ li {
 .headingIntro {
     display: flex;
     margin: 5rem 0 2rem 0;
-    border-bottom: 3px dashed white;
+    border-bottom: 3px dashed $text;
 
     h1 {
         font-family: 'Kode Mono';

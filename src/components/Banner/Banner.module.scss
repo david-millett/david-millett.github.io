@@ -1,16 +1,16 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 .container {
     margin: 0 auto 7.5rem auto;
-    color: white;
+    color: $text;
     // max-width: 700px;
     padding: 7.5rem 1.5em 0 1.5rem;
 
     .subhead {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 1rem;
         margin-bottom: 2rem;
     }
 

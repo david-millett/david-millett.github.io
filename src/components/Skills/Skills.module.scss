@@ -1,7 +1,5 @@
-$skillOne: rgba(128, 128, 128, 0);
-$skillTwo: white;
-$skillThree: rgb(81, 81, 81);
-$skillFour: rgb(146, 219, 78);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 .container {
     // max-width: 700px;
@@ -25,7 +23,7 @@ $skillFour: rgb(146, 219, 78);
         align-items: center;
         border: 2px solid $skillTwo;
         border-radius: 20px;
-        background-image: linear-gradient(rgb(81, 81, 81), rgb(49, 49, 49));
+        background-image: linear-gradient($gradient2, $gradient1);
         transition: 0.25s;
         font-weight: 600;
         div {
@@ -63,10 +61,6 @@ $skillFour: rgb(146, 219, 78);
     height: 2rem;
     border-radius: 0 15px 15px 0;
 }
-
-// .html {
-    // color: red;
-// }
 
 @media (min-width: 1210px) {
     .container {

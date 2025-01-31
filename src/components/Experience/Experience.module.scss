@@ -1,5 +1,5 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 .container {
     // max-width: 700px;
@@ -36,7 +36,7 @@ $lime-main: rgb(146, 219, 78);
 }
 
 .line {
-    background-color: white;
+    background-color: $text;
     width: 2px;
     height: 100%;
 }
@@ -47,7 +47,7 @@ $lime-main: rgb(146, 219, 78);
 // }
 
 .more {
-    border: 2px solid white;
+    border: 2px solid $text;
     border-radius: 50px;
     display: flex;
     align-items: flex-end;
@@ -59,7 +59,7 @@ $lime-main: rgb(146, 219, 78);
     cursor: pointer;
     color: $lime-main;
         border-color: $lime-main;
-        background-color: rgba(100, 212, 111, 0.163);
+        background-color: $lime-transparent;
 }
 
 .desc {
@@ -70,5 +70,15 @@ $lime-main: rgb(146, 219, 78);
     .container {
         margin: 0;
         padding-left: 0;
+    }
+}
+
+.openClose {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+    P {
+        padding: 0.5rem 1rem;
     }
 }

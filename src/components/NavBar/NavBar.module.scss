@@ -1,6 +1,5 @@
-// Colours
-$lime-main: rgb(146, 219, 78);
-$lime-dark: rgb(107, 160, 56);
+// Variables
+@use '../../../src/assets/styles/variables' as *;
 
 .container {
     display: flex;
@@ -12,7 +11,7 @@ $lime-dark: rgb(107, 160, 56);
 
     a {
         text-decoration: none;
-        color: white;
+        color: $text;
         transition: 0.25s;
     }
     a:hover {

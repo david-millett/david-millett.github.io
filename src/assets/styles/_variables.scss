@@ -1,2 +1,24 @@
 // Colours
 $lime-main: rgb(146, 219, 78);
+$lime-yellow: rgb(226, 240, 118);
+$lime-dark: rgb(107, 160, 56);
+$lime-transparent: rgba(100, 212, 111, 0.163);
+// $background: #242424;
+$background: #151515;
+// $background-section: rgb(28, 28, 28);
+$background-section: rgb(39, 39, 39);
+$border-section: rgb(95, 95, 95);
+$text: white;
+$text-dark: rgb(193, 193, 193);
+
+$skillOne: rgba(128, 128, 128, 0);
+$skillTwo: white;
+$skillThree: rgb(81, 81, 81);
+$skillFour: rgb(146, 219, 78);
+
+$gradient1: rgb(49, 49, 49);
+$gradient2: rgb(81, 81, 81);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
