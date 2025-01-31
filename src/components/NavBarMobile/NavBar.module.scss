@@ -1,16 +1,9 @@
 // Variables
 @use '../../../src/assets/styles/variables' as *;
 
-// .container {
-    // background-color: #242424;
-    // position: sticky;
-    // height: 4.5rem;
-    // top: 0;
-// }
-
 .list {
     padding: 5.5rem 3rem;
-    background-color: rgb(28, 28, 28);
+    background-color: $background-section; //!CHANGE!!!
     font-family: 'Kode Mono';
     height: 100%;
     li {
@@ -22,7 +15,7 @@
 
     }
     a {
-        color: white;
+        color: $text;
         transition: 0.25s;
     }
     a:hover {

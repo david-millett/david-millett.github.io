@@ -27,7 +27,6 @@ body {
     max-width: 1400px;
     min-height: 100vh;
     margin: 0 auto;
-    // padding: 0 1.5rem;
 }
 
 p {
@@ -58,8 +57,6 @@ li {
 
 .introLine {
     margin-bottom: 2rem;
-    // text-align: center;
-
 }
 
 span {
@@ -87,30 +84,6 @@ span {
 .bm-burger-bars {
     background: $lime-main;
 }
-
-// .bm-burger-bars-hover {
-//     background: $lime-main;
-//     box-shadow: 0 0 10px $lime-main;
-// }
-
-// .bm-cross {
-//     background: $lime-main;
-// }
-
-// .bm-cross-button {
-//     width: 1.75rem;
-//     height: 1.75rem;
-// }
-
-.bm-menu {
-    // position: fixed;
-    // width: 100%;
-    // z-index: 1000;
-}
-
-// .bm-overlay {
-//     z-index: 9;
-// }
 
 @media (min-width:900px) {
     body {

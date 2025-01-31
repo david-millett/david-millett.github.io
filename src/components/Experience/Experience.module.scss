@@ -3,15 +3,11 @@
 
 .container {
     // max-width: 700px;
-    // margin: 0 auto;
     padding: 0 1.5em;
     width: 100%;
     div h3 {
         color: $lime-main;
     }
-    // h4 {
-        // margin-bottom: 0.5rem;
-    // }
     ul {
         display: flex;
         flex-direction: column;
@@ -20,7 +16,6 @@
     li {
         display: flex;
         flex-direction: column;
-        // justify-content: flex-start;
         gap: 0.25rem;
 
     }
@@ -29,10 +24,6 @@
 .heading {
     display: flex;
     justify-content: space-between;
-
-    // @media (max-width: 500px) {
-        // flex-direction: column;
-    // }
 }
 
 .line {
@@ -41,18 +32,12 @@
     height: 100%;
 }
 
-// .jobby {
-//     display: flex;
-//     align-items: flex-start;
-// }
-
 .more {
     border: 2px solid $text;
     border-radius: 50px;
     display: flex;
     align-items: flex-end;
     transition: 0.5s;
-    // padding: 0 0.25rem 0 0.5rem;
 }
 
 .more:hover {
