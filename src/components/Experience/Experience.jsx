@@ -42,10 +42,11 @@ const cv = [
 const Experience = () => {
     return (
         <main className={styles.container}>
-            <div className="headingIntro">
+            <div className="headingIntro widescreenNone">
                 <h1 id='experience'><span className='logo'><FaUser /></span>Experience</h1>
             </div>
             <h3 className="introLine">I took a slightly roundabout path to becoming a software engineer... Along the way, I honed valuable skills including writing, design, communication, and project management.</h3>
+            <p>Global career, soft skills, communication with large range of people, translating technical subjects to others</p>
             <ul>
                 {cv.map(job => {
                     return (

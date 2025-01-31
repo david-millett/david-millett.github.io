@@ -5,7 +5,7 @@ $lime-dark: rgb(107, 160, 56);
 .container {
     display: flex;
     justify-content: space-around;
-    // align-items: center;
+    align-items: center;
     height: 100%;
     // position: sticky;
     // top: 0;
@@ -14,12 +14,12 @@ $lime-dark: rgb(107, 160, 56);
     // max-width: 750px;
     margin: 0 auto;
     li {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
     }
     a {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         text-decoration: none;
         color: white;
         transition: 0.25s;

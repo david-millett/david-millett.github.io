@@ -16,10 +16,11 @@ const NavBar = () => {
     return (
         <ul className={styles.container} id='desktopNav'>
             <a onClick={() => animateScroll.scrollToTop()}><li>Home</li></a>
-            <a onClick={() => scrolly('skills')}><li>Skills</li></a>
             <a onClick={() => scrolly('projects')}><li>Projects</li></a>
-            <a onClick={() => scrolly('experience')}><li>Experience</li></a>
             <a onClick={() => scrolly('aboutme')}><li>About Me</li></a>
+            <a className='widescreenOnly' onClick={() => scrolly('skillsExp')}><li>Skills/Experience</li></a>
+            <a className='widescreenNone' onClick={() => scrolly('skills')}><li>Skills</li></a>
+            <a className='widescreenNone' onClick={() => scrolly('experience')}><li>Experience</li></a>
             <a onClick={() => scrolly('contact')}><li>Contact</li></a>
         </ul>
     )

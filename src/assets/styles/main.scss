@@ -28,6 +28,7 @@ body {
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
     min-width: 320px;
+    max-width: 1400px;
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -120,8 +121,18 @@ span {
     }
 }
 
+.widescreenOnly {
+    display: none;
+}
+
 @media (min-width: 1210px) {
-    body {
-        max-width: 1400px;
+    .twins {
+        display: flex;
+    }
+    .widescreenOnly {
+        display: block;
+    }
+    .widescreenNone {
+        display: none;
     }
 }
