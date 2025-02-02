@@ -24,9 +24,13 @@ body {
     color: $text;
     background-color: $background;
     min-width: 320px;
-    max-width: 1400px;
     min-height: 100vh;
+}
+
+.content {
+    max-width: 1400px;
     margin: 0 auto;
+
 }
 
 p {
@@ -43,8 +47,8 @@ li {
 
 .headingIntro {
     display: flex;
-    margin: 5rem 0 2rem 0;
-    border-bottom: 3px dashed $text;
+    margin: 5rem 0 1rem 0;
+    // border-bottom: 3px dashed $text;
 
     h1 {
         font-family: 'Kode Mono';

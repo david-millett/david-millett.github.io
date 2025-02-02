@@ -2,16 +2,21 @@
 @use '../../../src/assets/styles/variables' as *;
 
 .container {
-    margin: 0 auto 7.5rem auto;
+    margin: 5rem auto 0 auto;
+    // margin-left: 1.5rem;
     color: $text;
-    padding: 7.5rem 1.5em 0 1.5rem;
-    // max-width: 700px;
+    padding: 4rem;
+    background-color: $background-section;
+    border-radius: 20px;
+
+    max-width: 800px;
 
     .subhead {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
+        color: $text-dark;
     }
 
     h2 {
@@ -27,7 +32,7 @@
     }
 
     @media (max-width: 500px) {
-        padding-top: 3.5rem;
+        margin-top: 3.5rem;
         .subhead {
             flex-direction: column;
         padding-top: 1rem;
@@ -37,10 +42,13 @@
 
 }
 
-// @media (min-width:1200px) {
-//     .container {
-//         h1 {
-//             font-size: 4rem;
-//         }
-//     }
-// }
+@media (min-width:1200px) {
+    .container {
+        h1 {
+            font-size: 4rem;
+        }
+        .subhead {
+            flex-direction: column;
+        }
+    }
+}

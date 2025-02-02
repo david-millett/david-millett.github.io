@@ -13,8 +13,9 @@ import { FaFireAlt } from "react-icons/fa"
 
 const Landing = () => {
     return (
-        <main className="content">
+        <>
             <NavBarBar />
+        <main className="content">
             <Banner />
             <Projects />
             <AboutMe />
@@ -28,6 +29,7 @@ const Landing = () => {
             </div>
             <ContactMe />
         </main>
+        </>
     )
 }
 

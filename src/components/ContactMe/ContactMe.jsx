@@ -14,8 +14,8 @@ const ContactMe = () => {
                 <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Contact</h1>
             </div>
             <div className={styles.body}>
-                <div className={styles.image}></div>
-                <h2>Thank you for your time, it was great to have you here! Want to get in touch? Catch me at one of the links below:</h2>
+                {/* <div className={styles.image}></div> */}
+                <h2>Thank you for your time, it was great to have you here! Want to get in touch? Catch me at one of these links:</h2>
                 <ul><Buttons /></ul>
             </div>
         </main>

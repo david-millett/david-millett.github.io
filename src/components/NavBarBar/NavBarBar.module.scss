@@ -5,6 +5,8 @@
     height: 4.5rem;
     position: sticky;
     top: 0;
-    background-color: $background;
+    background-color: $background-section;
     z-index: 1;
+    min-width: 100%;
+    margin: 0 auto;
 }
