@@ -104,7 +104,11 @@ const Projects = () => {
             <ul>
                 {portfolio.map(project => {
                     return (
-                        <li key={project.number} className={`${styles.project} ${project.number % 2 ? styles.odd : ''}`} style={{borderColor: project.colour, boxShadow: `0px 0px 10px ${project.colour}`}}>
+                        <li
+                            key={project.number}
+                            className={`${styles.project} ${project.number % 2 ? styles.odd : ''}`}
+                            // style={{borderColor: project.colour, boxShadow: `0px 0px 10px ${project.colour}`}}
+                        >
                             <div className={styles.projInfo}>
                                 <div className={styles.projectTitle}>
                                     <h1 style={{color: project.colour}}>{project.name}</h1>

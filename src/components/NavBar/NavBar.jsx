@@ -3,6 +3,26 @@ import { animateScroll, scroller } from 'react-scroll'
 // Styles
 import styles from './NavBar.module.scss'
 
+// Icons
+// import { 
+//     FaArrowUp,
+//     FaFireAlt,
+//     FaFolderOpen,
+//     FaUser,
+//     FaRegSmile,
+//     FaRegAddressCard,
+// } from 'react-icons/fa'
+
+// const navLinks = [
+//     {
+//         name: '',
+//         section: '',
+//         icon: '',
+
+//     }
+// ]
+
+
 const NavBar = () => {
     
     const scrolly = (destination) => {
@@ -23,6 +43,15 @@ const NavBar = () => {
             <a className='widescreenNone' onClick={() => scrolly('experience')}><li>Experience</li></a>
             <a onClick={() => scrolly('contact')}><li>Contact</li></a>
         </ul>
+    //     <ul className={styles.container} id='desktopNav'>
+    //         <a onClick={() => animateScroll.scrollToTop()}><li><FaArrowUp /></li></a>
+    //         <a onClick={() => scrolly('projects')}><li><FaFolderOpen /></li></a>
+    //         <a onClick={() => scrolly('aboutme')}><li><FaRegSmile /></li></a>
+    //         <a className='widescreenOnly' onClick={() => scrolly('skillsExp')}><li>Skills/Experience</li></a>
+    //         <a className='widescreenNone' onClick={() => scrolly('skills')}><li><FaFireAlt /></li></a>
+    //         <a className='widescreenNone' onClick={() => scrolly('experience')}><li><FaUser /></li></a>
+    //         <a onClick={() => scrolly('contact')}><li><FaRegAddressCard /></li></a>
+    // </ul>
     )
 }
 

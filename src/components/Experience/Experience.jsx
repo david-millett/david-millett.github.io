@@ -19,9 +19,9 @@ const Experience = () => {
             role: 'Software Engineering Bootcamp',
             code: 'seb',
             company: 'General Assembly',
-            location: 'London [UK]',
-            startDate: '2024',
-            endDate: '2024',
+            location: 'London, UK',
+            startDate: 'Oct 2024',
+            endDate: 'Nov 2024',
             description: 'A 12-week bootcamp course held remotely via Zoom and Slack, where I learned to build full-stack apps using the latest technologies and coding languages. The course consisted of online lectures, labs, daily standups, as well as individual and group projects.',
             reveal: gaReveal,
         },
@@ -29,7 +29,7 @@ const Experience = () => {
             role: 'Communications & Media Officer',
             code: 'cmo',
             company: 'Ravensbourne University London',
-            location: 'London [UK]',
+            location: 'London, UK',
             startDate: '2020',
             endDate: '2024',
             description: 'Managed, wrote, and designed internal and external communications for a creative university. Coordinated responses to adverse events and PR crises and developed a design process for digital screens to transform on-site communications and establish our identity to visitors.',
@@ -39,7 +39,7 @@ const Experience = () => {
             role: 'English Instructor',
             code: 'ei',
             company: 'AEON',
-            location: 'Fukuoka [Japan]',
+            location: 'Fukuoka, Japan',
             startDate: '2018',
             endDate: '2019',
             description: 'Planned and taught bespoke English lessons for over 300 students aged 3 - 83 in Japan. Publicised the company through media/advertising work, including TV interviews to help grow the business and successfully recruit new students.',
@@ -49,7 +49,7 @@ const Experience = () => {
             role: 'Senior News Reporter',
             code: 'snr',
             company: 'GPonline (Haymarket Media Group)',
-            location: 'London [UK]',
+            location: 'London, UK',
             startDate: '2014',
             endDate: '2018',
             description: 'Wrote daily news and features for an online magazine for doctors. Designed infographics and figures, analysed raw datasets to uncover agenda-setting headlines, and transformed expert topics including medicine, politics, healthcare, law, and science into engaging copy.',
@@ -100,12 +100,15 @@ const Experience = () => {
                             {/* <div> */}
                                 <div className={styles.heading}>
                                     <h3>{job.role}</h3>
-                                    <p onClick={() => toggleReveal(job.code)} className={`${styles.more} ${job.reveal ? styles.pressed : ''}`}>{job.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}</p>
+                                    <p onClick={() => toggleReveal(job.code)} className={`${styles.more} ${styles.circle}`}>
+                                        {job.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
+                                    </p>
                                 </div>
                                 <h4><em>{job.company}</em></h4>
                                 {job.reveal && 
                                     <div>
-                                        <p>{job.location}, {job.startDate} - {job.endDate}</p>
+                                        <p>{job.location}</p>
+                                        <p>{job.startDate} - {job.endDate}</p>
                                         <p className={styles.desc}>{job.description}</p>
                                     </div>}
                             {/* </div> */}

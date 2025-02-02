@@ -85,11 +85,11 @@ span {
     background: $lime-main;
 }
 
-@media (min-width:900px) {
-    body {
-        padding: 0 8rem;
-    }
-}
+// @media (min-width:900px) {
+//     body {
+//         padding: 0 8rem;
+//     }
+// }
 
 .widescreenOnly {
     display: none;

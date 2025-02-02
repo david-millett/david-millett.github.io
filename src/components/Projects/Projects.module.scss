@@ -2,7 +2,7 @@
 @use '../../../src/assets/styles/variables' as *;
 
 .container {
-    // max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 1.5em;
     ul {
@@ -32,18 +32,19 @@
 }
 
 .project {
+    // border-radius: 10px 10px 0 0;
     border-radius: 10px;
     transition: 0.5s;
     display: flex;
     flex-direction: column;
     img {
         width: 100%;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
         margin: 0 auto;
     }
-    border: 2px solid $border-section;
+    // border: 2px solid $border-section;
     background-color: $background-section;
-    padding: 2rem;
+    
     ul {
         display: flex;
         justify-content: center;
@@ -82,15 +83,19 @@
 
 .buttonContainer {
     display: flex;
-    margin: 1rem 0 2rem 0;
+    // margin: 1rem 0 2rem 0;
 }
 
 .projInfo {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
 
 @media (min-width: 1377px) {
+    .container {
+        max-width: none;
+    }
     .projectTitle {
         flex-direction: column;
         align-items: flex-start;
@@ -99,19 +104,26 @@
     }
     .project {
         flex-direction: row;
-        gap: 2rem;
+        // gap: 2rem;
         img {
-            height: 400px;
+            height: 450px;
+            border-radius: 0 10px 10px 0;
+
         }
     }
     .odd {
         flex-direction: row-reverse;
+        img {
+            border-radius: 10px 0 0 10px;
+        }
     }
     .buttonContainer {
         margin: 0;
     }
     .projInfo {
         justify-content: space-between;
+        // padding: 2rem 0 2rem 2rem;
+        // border-radius: 10px;
     }
     .description {
         margin-bottom: 0;

@@ -2,14 +2,17 @@
 @use '../../../src/assets/styles/variables' as *;
 
 .container {
+    padding: 0 1rem;
     display: flex;
-    justify-content: space-around;
-    // gap: 2rem;
+    justify-content: center;
+    gap: 2rem;
     align-items: center;
     height: 100%;
     font-family: 'Kode Mono';
     margin: 0 auto;
-    // margin-left: 2rem;
+    font-size: 2rem;
+    // background-color: red;
+
 
     a {
         text-decoration: none;

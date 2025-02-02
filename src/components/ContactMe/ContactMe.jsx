@@ -13,58 +13,11 @@ const ContactMe = () => {
             <div className="headingIntro">
                 <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Contact</h1>
             </div>
-                <div className={styles.body}>
+            <div className={styles.body}>
+                <div className={styles.image}></div>
                 <h2>Thank you for your time, it was great to have you here! Want to get in touch? Catch me at one of the links below:</h2>
-                <ul>
-                    <Buttons />
-                </ul>
+                <ul><Buttons /></ul>
             </div>
-            {/* <p>Or, simply fill in the form to reach out!</p>
-            <h3>Say hey</h3> */}
-            {/* <form>
-                <div>
-                    <label htmlFor="name">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        // value={}
-                        // onChange={}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input
-                        type="text"
-                        id="email"
-                        name="email"
-                        // value={}
-                        // onChange={}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="name">Subject</label>
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        // value={}
-                        // onChange={}
-                    />
-                </div>
-                <div>
-                    <label htmlFor="name">Message</label>
-                    <textarea
-                        type="text"
-                        id="message"
-                        name="message"
-                        rows="6"
-                        // value={}
-                        // onChange={}
-                    />
-                </div>
-                <button>Send</button>
-            </form> */}
         </main>
     )
 }

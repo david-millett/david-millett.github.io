@@ -18,9 +18,9 @@
         flex-direction: column;
         gap: 0.25rem;
         background-color: $background-section;
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         border-radius: 20px;
-
+        transition: 0.5s;
     }
 }
 
@@ -29,14 +29,15 @@
     justify-content: space-between;
 }
 
-.line {
-    background-color: $text;
-    width: 2px;
-    height: 100%;
-}
+// .line {
+//     background-color: $text;
+//     width: 2px;
+//     height: 100%;
+// }
 
 .more {
     border: 2px solid $text;
+    // height: 1.5rem;
     border-radius: 50px;
     display: flex;
     align-items: flex-end;
@@ -48,6 +49,11 @@
     color: $lime-main;
         border-color: $lime-main;
         background-color: $lime-transparent;
+}
+
+.circle {
+    height: 27px;
+    width: 27px;
 }
 
 .desc {
