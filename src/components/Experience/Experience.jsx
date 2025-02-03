@@ -88,7 +88,7 @@ const Experience = () => {
             <div className="headingIntro widescreenNone">
                 <h1 id='experience'><span className='logo'><FaUser /></span>Experience</h1>
             </div>
-            <h3 className="introLine widescreenNone">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, made connections with people, honed valuable skills including writing, design, and project management!</h3>
+            <h3 className="introLine widescreenNone">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, made connections with people, and honed valuable skills including writing, design, and project management!</h3>
             {/* <p>Global career, soft skills, communication with large range of people, translating technical subjects to others</p> */}
             <ul>
                 {cv.map(job => {

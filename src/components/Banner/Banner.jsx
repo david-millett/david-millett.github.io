@@ -5,7 +5,7 @@ import styles from './Banner.module.scss'
 import Buttons from "../Buttons/ContactButtons"
 
 // Icons
-import { FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa'
+// import { FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const Banner = () => {
     return (
@@ -17,12 +17,10 @@ const Banner = () => {
                         <h1>Writer.</h1>
                         <h1>Creative.</h1>
                 </div>
-                {/* <h2>Read on to get a feel for my work, including full-stack websites, games, and styling. You can find me or get in touch via:</h2> */}
-                <ul>
-                    <Buttons />
-                </ul>
+                {/* <h2>Get in touch:</h2> */}
+                <ul><Buttons /></ul>
             </div>
-            <div className={styles.smiles}>
+            {/* <div className={styles.smiles}>
                 <div className={styles.contactButtons}>
                     <FaEnvelope />
                     <p>Email</p>
@@ -35,7 +33,7 @@ const Banner = () => {
                     <FaGithub />
                     <p>GitHub</p>
                 </div>
-            </div>
+            </div> */}
         </main>
     )
 }
