@@ -28,7 +28,7 @@ body {
 }
 
 .content {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
@@ -46,9 +46,10 @@ li {
 }
 
 .headingIntro {
+    min-width: 100%;
     display: flex;
     margin: 5rem 0 1rem 0;
-    // border-bottom: 3px dashed $text;
+    border-bottom: 3px dashed $text;
 
     h1 {
         font-family: 'Kode Mono';
@@ -79,14 +80,16 @@ span {
 
 .bm-burger-button {
     position: fixed;
-    width: 1.75rem;
-    height: 1.5rem;
+    width: 32px;
+    height: 24px;
     right: 2rem;
-    top: 1.5rem;
+    // left: 2rem;
+    top: 12px;
 }
 
 .bm-burger-bars {
     background: $lime-main;
+    background: $text;
 }
 
 // @media (min-width:900px) {

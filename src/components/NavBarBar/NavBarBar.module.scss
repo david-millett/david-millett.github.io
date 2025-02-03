@@ -2,10 +2,11 @@
 @use '../../../src/assets/styles/variables' as *;
 
 .container {
-    height: 4.5rem;
+    height: 3rem;
     position: sticky;
     top: 0;
     background-color: $background-section;
+    // background-color: $background;
     z-index: 1;
     min-width: 100%;
     margin: 0 auto;

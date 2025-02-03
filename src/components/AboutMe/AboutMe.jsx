@@ -66,7 +66,7 @@ const AboutMe = () => {
             <div className={styles.sections}>
                 <div className={styles.section1}>
                     <h2>Hello!</h2>
-                    <p>I am a junior software engineer with experience in journalism, communications, and digital publishing. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised where my true passion was... and that I was trying to code without the best tools!</p>
+                    <p>I am a junior software engineer with experience in journalism, communications, and digital publishing. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised where my true passion lay... and that I was trying to code without the best tools!</p>
                     <p className={styles.secondPara}>Discovering the possibilities provided by coding struck me like a bolt of lightning, and I soon enrolled on a software engineering course at General Assembly. I thrive on creating results and solutions, learning new things, and understanding complex concepts, which is why I am excited to bring my experience and designer’s eye to a career in this field.</p>
                 </div>
                 <div className={styles.section2}>

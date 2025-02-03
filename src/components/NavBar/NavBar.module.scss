@@ -4,13 +4,15 @@
 .container {
     display: flex;
     justify-content: space-around;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 3rem;
     align-items: center;
     height: 100%;
     font-family: 'Kode Mono';
     margin: 0 auto;
-    // margin-left: 2rem;
+    // margin-left: 18rem;
+    max-width: 1200px;
+    padding-left: 1.5rem;
 
     a {
         text-decoration: none;
