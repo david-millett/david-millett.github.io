@@ -100,7 +100,6 @@ const Projects = () => {
             <div className="headingIntro">
                 <h1 id='projects'><span className='logo'><FaFolderOpen /></span>Projects</h1>
             </div>
-            {/* <p className="introLine">Check out some of my projects, built using a range of technologies across the front and back ends.</p> */}
             <ul>
                 {portfolio.map(project => {
                     return (

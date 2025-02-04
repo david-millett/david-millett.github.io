@@ -1,47 +1,33 @@
 // Variables
 @use '../../../src/assets/styles/variables' as *;
 
-.content {
+// .content {
     // padding: 3.5rem;
     // background-color: $background-section;
     // border-radius: 20px;
-}
+// }
 
 .container {
-    // margin: 0 auto;
     margin-top: 5rem;
-    // margin-left: 1.5rem;
     color: $text;
     padding: 0 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-
-    // max-width: 1000px;
-
     .subhead {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
         margin-bottom: 5rem;
-        // color: $text-dark;
-        // text-decoration: underline dashed $lime-main;
     }
-
     h2 {
         margin: 1em 0 2em 0;
     }
-
-    // p {
-    //     margin-top: 2rem;
-    // }
-
     ul {
         display: flex;
     }
-
-    @media (max-width: 500px) {
+    @media (max-width: 630px) {
         margin-top: 5rem;
         .subhead {
             flex-direction: column;
@@ -55,9 +41,6 @@
     .container {
         h1 {
             font-size: 4rem;
-        }
-        .subhead {
-            // flex-direction: column;
         }
     }
 }
@@ -78,7 +61,6 @@
         margin-left: 9rem;
         position: absolute;
         font-family: Kode Mono;
-        // opacity: 0;
         display: none;
     }
     transition: 1s;
@@ -92,10 +74,6 @@
             0% {opacity: 0;}
             100% {opacity: 1;}
         }
-        
-        
-        
-
     }
 }
 

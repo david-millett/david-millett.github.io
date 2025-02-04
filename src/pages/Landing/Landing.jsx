@@ -9,7 +9,6 @@ import Skills from "../../components/Skills/Skills"
 
 // Icons
 import { FaFireAlt } from "react-icons/fa"
-// import { FaUser } from 'react-icons/fa'
 
 const Landing = () => {
     return (

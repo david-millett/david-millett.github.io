@@ -2,7 +2,8 @@
 @use '../../../src/assets/styles/variables' as *;
 
 .container {
-    // max-width: 700px;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 0 1.5em;
     width: 100%;
     div h3 {
@@ -28,15 +29,8 @@
     justify-content: space-between;
 }
 
-// .line {
-//     background-color: $text;
-//     width: 2px;
-//     height: 100%;
-// }
-
 .more {
     border: 2px solid $text;
-    // height: 1.5rem;
     border-radius: 50px;
     display: flex;
     align-items: flex-end;
@@ -59,7 +53,7 @@
     margin-top: 1rem;
 }
 
-@media (min-width: 1210px) {
+@media (min-width: 1377px) {
     .container {
         margin: 0;
         padding-left: 0;

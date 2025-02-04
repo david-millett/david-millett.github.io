@@ -89,15 +89,10 @@ const Experience = () => {
                 <h1 id='experience'><span className='logo'><FaUser /></span>Experience</h1>
             </div>
             <h3 className="introLine widescreenNone">I took a slightly roundabout path to becoming a software engineer... Along the way, I worked around the world, made connections with people, and honed valuable skills including writing, design, and project management!</h3>
-            {/* <p>Global career, soft skills, communication with large range of people, translating technical subjects to others</p> */}
             <ul>
                 {cv.map(job => {
                     return (
                         <li key={job.role}>
-                            {/* <div>
-                                <div className={styles.line}></div>
-                                </div> */}
-                            {/* <div> */}
                                 <div className={styles.heading}>
                                     <h3>{job.role}</h3>
                                     <p onClick={() => toggleReveal(job.code)} className={`${styles.more} ${styles.circle}`}>
@@ -111,7 +106,6 @@ const Experience = () => {
                                         <p>{job.startDate} - {job.endDate}</p>
                                         <p className={styles.desc}>{job.description}</p>
                                     </div>}
-                            {/* </div> */}
                         </li>
                     )
                 })}

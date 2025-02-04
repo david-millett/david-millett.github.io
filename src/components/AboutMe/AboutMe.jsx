@@ -10,7 +10,7 @@ import { TbLanguageHiragana } from 'react-icons/tb'
 import { LuFish, LuDumbbell } from 'react-icons/lu'
 
 // Images
-import Me from './me.jpg'
+import me from './me.jpg'
 
 const AboutMe = () => {
         
@@ -70,7 +70,7 @@ const AboutMe = () => {
                 </h1>
             </div>
             <div className={styles.sections}>
-                <img src={Me} alt='David' />
+                <img src={me} alt='David' />
                 <div className={styles.section1}>
                     <h2>Hello!</h2>
                     <p className={styles.para}>I am a junior software engineer with experience in journalism, communications, and digital publishing. It was in my free time, spent building intricate spreadsheets - from automating progressive workout routines to analysing data on the books I had read - that I realised where my true passion lay... and that I was trying to code without the best tools!</p>
@@ -82,7 +82,6 @@ const AboutMe = () => {
                             return (
                                 <div key={interest.name}>
                                     <li onClick={() => toggleReveal(interest.code)} className={`${styles.more} ${interest.reveal ? styles.pressed : styles.unpressed}`} >
-                                        {/* {interest.icon} */}
                                         {interest.name}
                                         {interest.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
                                     </li>

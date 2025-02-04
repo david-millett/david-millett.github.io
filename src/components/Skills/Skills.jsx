@@ -29,8 +29,6 @@ const Skills = () => {
             <div className='headingIntro widescreenNone'>
                 <h1 id='skills'><span className='logo'><FaFireAlt /></span>Skills</h1>
             </div>
-            {/* <p className="introLine">Here are some of the key skills I have been using, and continue to learn about: I adore to learn and improve, so watch this space!</p> */}
-            {/* <h3>Technical Skills</h3> */}
             <ul>
                 {skillsList.map((skill, index) => {
                     return (

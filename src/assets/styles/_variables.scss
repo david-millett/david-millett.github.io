@@ -1,4 +1,4 @@
-// Colours
+// * Colours
 $lime-main: rgb(146, 219, 78);
 // $lime-main: rgb(142, 198, 90);
 $lime-yellow: rgb(226, 240, 118);
@@ -22,10 +22,6 @@ $skillFour: rgb(146, 219, 78);
 $gradient1: rgb(49, 49, 49);
 $gradient2: rgb(81, 81, 81);
 
-// Fonts
-
-// 'Lato'
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-// 'Kode Mono'
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+// * Fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); // 'Lato'
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap'); // 'Kode Mono'
