@@ -39,7 +39,7 @@ const AboutMe = () => {
             name: 'Japanese',
             code: 'jp',
             icon: <TbLanguageHiragana />,
-            desc: "I spent two incredible years living in Japan. I enjoy studying Japanese and reading manga in its native language. On my last trip, I picked up the full 鬼滅の刃 (Demon Slayer) set! I also love JRPGs, and don't think anything will ever be able to topple Final Fantasy X in my heart.",
+            desc: "I spent two incredible years living in Japan. I enjoy studying Japanese and reading manga in its native language. On my last trip, I picked up the full 鬼滅の刃 (Demon Slayer) set! I also love JRPGs and strategy JRPGs - happy to discuss why Final Fantasy X is the best game of all time.",
             reveal: jpReveal
         },
         {
@@ -53,7 +53,7 @@ const AboutMe = () => {
             name: 'Fitness',
             code: 'gym',
             icon: <LuDumbbell />,
-            desc: "Recently, you’ll often catch me unwinding down at the gym or out and about getting those steps in after a long day spent at the desk. Some might call me crazy, but I love to relax by taking on a challenge! There are lots of stats and numbers to be had when you're into fitness - and I love a task that lets you see and track progress!",
+            desc: "Recently, you’ll often catch me unwinding down at the gym or out and about getting those steps in after a long day spent at the desk. Some might call me crazy, but I love to relax by pushing myself as hard as possible! There are lots of stats and numbers to be had when you're into fitness - and I love a task that lets you collate data and track progress!",
             reveal: gymReveal
         },
     ]
