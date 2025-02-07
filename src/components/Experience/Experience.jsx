@@ -92,10 +92,10 @@ const Experience = () => {
             <ul>
                 {cv.map(job => {
                     return (
-                        <li key={job.role}>
+                        <li key={job.role} onClick={() => toggleReveal(job.code)}>
                                 <div className={styles.heading}>
                                     <h3>{job.role}</h3>
-                                    <p onClick={() => toggleReveal(job.code)} className={`${styles.more} ${styles.circle}`}>
+                                    <p className={`${styles.more} ${styles.circle}`}>
                                         {job.reveal ? <BiChevronUp size={24} /> : <BiChevronDown size={24} />}
                                     </p>
                                 </div>
