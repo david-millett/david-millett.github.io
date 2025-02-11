@@ -28,6 +28,7 @@ const portfolio = [
         techstack: [
             {icon: <FaPython />, text: 'Python'},
             {icon: <SiDjango />, text: 'Django'},
+            {icon: <FaReact />, text: 'React'},
             {icon: <SiPostgresql />, text: 'PostgreSQL'},
             {icon: <FaSass />, text: 'Sass'},
         ],
