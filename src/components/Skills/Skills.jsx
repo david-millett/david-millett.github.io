@@ -4,7 +4,7 @@ import styles from './Skills.module.scss'
 //Icons
 import { FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub, FaFireAlt } from 'react-icons/fa'
 import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
-import { SiExpress, SiDjango, SiPostgresql } from 'react-icons/si'
+import { SiExpress, SiDjango, SiPostgresql, SiTypescript, SiDotnet } from 'react-icons/si'
 
 const skillsList = [
     {name: 'HTML', icon: <DiHtml5 />},
@@ -23,6 +23,12 @@ const skillsList = [
     {name: 'Git/GitHub', icon: <FaGithub />},
 ]
 
+const learningSkills = [
+    // {name: 'Python', icon: <FaPython />},
+    {name: 'C#', icon: <SiDotnet />},
+    {name: 'TypeScript', icon: <SiTypescript />},
+]
+
 const Skills = () => {
     return (
         <main className={styles.container}>
@@ -36,6 +42,18 @@ const Skills = () => {
                                 <p className={styles.icon}>{skill.icon}</p>
                                 <div></div>
                                 <p className={styles.name}>{skill.name}</p>
+                        </li>
+                    )
+                })}
+            </ul>
+            <h2>Learning:</h2>
+            <ul>
+                {learningSkills.map((skill, index) => {
+                    return (
+                        <li key={index}>
+                            <p className={styles.icon}>{skill.icon}</p>
+                            <div></div>
+                            <p className={styles.name}>{skill.name}</p>
                         </li>
                     )
                 })}

@@ -24,7 +24,6 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Solo',
         subtitle: 'A house plant collecting and care app',
-        // techstack2: <div className={styles.techstack}><FaPython /><SiDjango /><SiPostgresql /><FaSass /></div>,
         techstack: [
             {icon: <FaPython />, text: 'Python'},
             {icon: <SiDjango />, text: 'Django'},
@@ -44,7 +43,6 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Group',
         subtitle: 'A volunteering portal for local communities',
-        // techstack2: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaReact /><FaNodeJs /><FaSass /></div>,
         techstack: [
             {icon: <DiMongodb />, text: 'MongoDB'},
             {icon: <SiExpress />, text: 'Express'},
@@ -64,7 +62,6 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Solo',
         subtitle: 'A community for Japanese streetwear enthusiasts',
-        // techstack2: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaNodeJs /><DiCss3 /></div>,
         techstack: [
             {icon: <DiMongodb />, text: 'MongoDB'},
             {icon: <SiExpress />, text: 'Express'},
@@ -83,7 +80,6 @@ const portfolio = [
         timeframe: '5 days',
         team: 'Solo',
         subtitle: 'A horror-themed minesweeper with pixel art style',
-        // techstack2: <div className={styles.techstack}><DiHtml5 /><DiCss3 /><FaJs /></div>,
         techstack: [
             {icon: <DiHtml5 />, text: 'HTML'},
             {icon: <FaJs />, text: 'JavaScript'},
@@ -97,9 +93,9 @@ const portfolio = [
 
 const currentProjects = [
     {
-        name: 'Glog',
+        name: 'GLog',
         number: 1,
-        description: "A workout tracking and logging app",
+        subtitle: "A workout tracking and logging app",
         techstack: [
             {icon: <FaPython />, text: 'Python'},
             {icon: <SiDjango />, text: 'Django'},
@@ -107,6 +103,7 @@ const currentProjects = [
             {icon: <SiPostgresql />, text: 'PostgreSQL'},
             {icon: <FaSass />, text: 'Sass'},
         ],
+        description: "My old spreadsheet-based system just isn't cutting it anymore!",
     }
 ]
 
@@ -166,7 +163,8 @@ const Projects = () => {
                                         })}
                                     </div>
                                 </div>
-                                <h3>{project.description}</h3>
+                                <h3>{project.subtitle}</h3>
+                                <p className={styles.description}>{project.description}</p>
                             </div>
                         </li>
                     )
