@@ -24,7 +24,7 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Solo',
         subtitle: 'A house plant collecting and care app',
-        techstack2: <div className={styles.techstack}><FaPython /><SiDjango /><SiPostgresql /><FaSass /></div>,
+        // techstack2: <div className={styles.techstack}><FaPython /><SiDjango /><SiPostgresql /><FaSass /></div>,
         techstack: [
             {icon: <FaPython />, text: 'Python'},
             {icon: <SiDjango />, text: 'Django'},
@@ -44,7 +44,7 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Group',
         subtitle: 'A volunteering portal for local communities',
-        techstack2: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaReact /><FaNodeJs /><FaSass /></div>,
+        // techstack2: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaReact /><FaNodeJs /><FaSass /></div>,
         techstack: [
             {icon: <DiMongodb />, text: 'MongoDB'},
             {icon: <SiExpress />, text: 'Express'},
@@ -64,7 +64,7 @@ const portfolio = [
         timeframe: '1 week',
         team: 'Solo',
         subtitle: 'A community for Japanese streetwear enthusiasts',
-        techstack2: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaNodeJs /><DiCss3 /></div>,
+        // techstack2: <div className={styles.techstack}><DiMongodb /><SiExpress /><FaNodeJs /><DiCss3 /></div>,
         techstack: [
             {icon: <DiMongodb />, text: 'MongoDB'},
             {icon: <SiExpress />, text: 'Express'},
@@ -83,7 +83,7 @@ const portfolio = [
         timeframe: '5 days',
         team: 'Solo',
         subtitle: 'A horror-themed minesweeper with pixel art style',
-        techstack2: <div className={styles.techstack}><DiHtml5 /><DiCss3 /><FaJs /></div>,
+        // techstack2: <div className={styles.techstack}><DiHtml5 /><DiCss3 /><FaJs /></div>,
         techstack: [
             {icon: <DiHtml5 />, text: 'HTML'},
             {icon: <FaJs />, text: 'JavaScript'},
@@ -93,6 +93,21 @@ const portfolio = [
         description: "Minecreeper is a browser-based minesweeper-style game with a horror twist! While the traditional game tasks players with avoiding mines and setting down flags in their places on the grid-based board, Minecreeper substitues mines for undead skeletons - and the flags for tombstones. The first click is set to always implement a flood fill to improve player experience. Players can also double click to reveal all nearby squares if the correct number of tombstones have been set.",
         colour: '#ed5151',
     },
+]
+
+const currentProjects = [
+    {
+        name: 'Glog',
+        number: 1,
+        description: "A workout tracking and logging app",
+        techstack: [
+            {icon: <FaPython />, text: 'Python'},
+            {icon: <SiDjango />, text: 'Django'},
+            {icon: <FaReact />, text: 'React'},
+            {icon: <SiPostgresql />, text: 'PostgreSQL'},
+            {icon: <FaSass />, text: 'Sass'},
+        ],
+    }
 ]
 
 const Projects = () => {
@@ -130,6 +145,29 @@ const Projects = () => {
                                 </div>
                             </div>
                             <img className={styles.image} src={project.picture} />
+                        </li>
+                    )
+                })}
+            </ul>
+
+            <h2>Working on...</h2>
+            <ul>
+                {currentProjects.map(project => {
+                    return (
+                        <li key={project.number} className={styles.project}>
+                            <div className={styles.projInfo}>
+                                <div className={styles.projectTitle}>
+                                    <h1>{project.name}</h1>
+                                    <div className={styles.techstack}>
+                                        {project.techstack.map(tech => {
+                                            return (
+                                                <h2 key={tech.text}>{tech.icon}<p>{tech.text}</p></h2>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                                <h3>{project.description}</h3>
+                            </div>
                         </li>
                     )
                 })}
