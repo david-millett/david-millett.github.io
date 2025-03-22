@@ -36,6 +36,13 @@
             50% {transform: translateY(-2px);}
         }
     }
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+    }
 }
 
 .icon {

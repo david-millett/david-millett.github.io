@@ -4,7 +4,8 @@ import styles from './Skills.module.scss'
 //Icons
 import { FaSass, FaJs, FaReact, FaBootstrap, FaNodeJs, FaPython, FaNpm, FaGithub, FaFireAlt } from 'react-icons/fa'
 import { DiMongodb, DiHtml5, DiCss3 } from 'react-icons/di'
-import { SiExpress, SiDjango, SiPostgresql, SiTypescript, SiDotnet } from 'react-icons/si'
+import { SiExpress, SiDjango, SiPostgresql, SiTypescript } from 'react-icons/si'
+import { FiBookOpen } from 'react-icons/fi'
 
 const skillsList = [
     {name: 'HTML', icon: <DiHtml5 />},
@@ -25,7 +26,7 @@ const skillsList = [
 
 const learningSkills = [
     // {name: 'Python', icon: <FaPython />},
-    {name: 'C#', icon: <SiDotnet />},
+    // {name: 'C#', icon: <SiDotnet />},
     {name: 'TypeScript', icon: <SiTypescript />},
 ]
 
@@ -46,7 +47,7 @@ const Skills = () => {
                     )
                 })}
             </ul>
-            <h2>Learning:</h2>
+            <h2><FiBookOpen /> Studying:</h2>
             <ul>
                 {learningSkills.map((skill, index) => {
                     return (
