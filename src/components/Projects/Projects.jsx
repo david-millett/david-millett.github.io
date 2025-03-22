@@ -109,7 +109,7 @@ const currentProjects = [
             // {icon: <FaSass />, text: 'Sass'},
         ],
         // picture: '',
-        description: "An app that enables users to create workout routines and log their sessions to track metrics. Inspired by my own needs - my old spreadsheet-based system just isn't cutting it anymore!",
+        description: "An app that enables users to easily create, view, and update workout routines. Also logs sessions to track progress. Watch this space...",
         colour: '#3e97e4',
     },
 ]
