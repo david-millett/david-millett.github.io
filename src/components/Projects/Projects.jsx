@@ -3,6 +3,7 @@ import styles from './Projects.module.scss'
 
 // Components
 import ProjectButtons from '../Buttons/ProjectButtons'
+import ReadMeButton from '../Buttons/ReadmeButton'
 
 // Icons
 import { FaJs, FaNodeJs, FaPython, FaReact, FaSass, FaFolderOpen } from 'react-icons/fa'
@@ -86,25 +87,31 @@ const portfolio = [
             {icon: <DiCss3 />, text: 'CSS'},
         ],
         picture: minecreeper,
-        description: "Minecreeper is a browser-based minesweeper-style game with a horror twist! While the traditional game tasks players with avoiding mines and setting down flags in their places on the grid-based board, Minecreeper substitues mines for undead skeletons - and the flags for tombstones. The first click is set to always implement a flood fill to improve player experience. Players can also double click to reveal all nearby squares if the correct number of tombstones have been set.",
+        description: "Minecreeper is a browser-based minesweeper-style game with a horror twist, substituting the traditional mines and flags for undead skeletons and tombstones! The first click is set to always implement a flood fill to improve player experience. Players can also double click to reveal all nearby squares if the correct number of tombstones have been set.",
         colour: '#ed5151',
     },
 ]
 
 const currentProjects = [
     {
-        name: 'GLog',
         number: 1,
+        name: 'GLog',
+        // link: '',
+        readme: 'https://github.com/david-millett/glog-backend',
+        // timeframe: '',
+        // team: '',
         subtitle: "A workout tracking and logging app",
         techstack: [
             {icon: <FaPython />, text: 'Python'},
             {icon: <SiDjango />, text: 'Django'},
-            {icon: <FaReact />, text: 'React'},
-            {icon: <SiPostgresql />, text: 'PostgreSQL'},
-            {icon: <FaSass />, text: 'Sass'},
+            // {icon: <FaReact />, text: 'React'},
+            // {icon: <SiPostgresql />, text: 'PostgreSQL'},
+            // {icon: <FaSass />, text: 'Sass'},
         ],
-        description: "My old spreadsheet-based system just isn't cutting it anymore!",
-    }
+        // picture: '',
+        description: "An app that enables users to create workout routines and log their sessions to track metrics. Inspired by my own needs - my old spreadsheet-based system just isn't cutting it anymore!",
+        colour: '#3e97e4',
+    },
 ]
 
 const Projects = () => {
@@ -147,15 +154,15 @@ const Projects = () => {
                 })}
             </ul>
 
-            <h2>Working on...</h2>
+            <h1 className={styles.workingHeader}>Working on...</h1>
             <ul>
                 {currentProjects.map(project => {
                     return (
-                        <li key={project.number} className={styles.project}>
+                        <li key={project.number} className={`${styles.project} ${styles.current}`}>
                             <div className={styles.projInfo}>
                                 <div className={styles.projectTitle}>
-                                    <h1>{project.name}</h1>
-                                    <div className={styles.techstack}>
+                                    <h1 style={{color: project.colour}}>{project.name}</h1>
+                                    <div style={{color: project.colour}} className={styles.techstack}>
                                         {project.techstack.map(tech => {
                                             return (
                                                 <h2 key={tech.text}>{tech.icon}<p>{tech.text}</p></h2>
@@ -165,6 +172,9 @@ const Projects = () => {
                                 </div>
                                 <h3>{project.subtitle}</h3>
                                 <p className={styles.description}>{project.description}</p>
+                                <div className={styles.buttonContainer}>
+                                    <ReadMeButton readme={project.readme} colour={project.colour} />
+                                </div>
                             </div>
                         </li>
                     )
