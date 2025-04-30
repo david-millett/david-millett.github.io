@@ -17,7 +17,7 @@ const ContactMe = () => {
                 <h1 id='contact'><span className='logo'><FaRegAddressCard /></span>Contact</h1>
             </div>
             <div className={styles.body}>
-                <h2><span>Thank you for your time <FaRegLaughBeam /></span> < br/><br /> It was great to have you here! Want to get in touch? Catch me at one of these links:</h2>
+                <h2><span>It was great to have you here! <FaRegLaughBeam /></span> <br/><br/>Want to get in touch? Catch me via:</h2>
                 <ul><Buttons /></ul>
             </div>
         </main>
